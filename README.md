@@ -9,8 +9,11 @@
 
 
 # Topic 
-### Module
-### dir()
+1. [Module](#Module)
+2. [dir()](#dir()-Function)
+3. [What is pip?](#What-is-pip?)
+4. [The REPL](#The-REPL)
+5. [Comments](#Comments)
 
 
 ## Module
