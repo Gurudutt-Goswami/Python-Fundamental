@@ -104,6 +104,16 @@ print(a)
 
 ## Type Function and Type Conversion
 
+
+### Type Function 
+type() method returns class type of the argument(object) passed as parameter
+```
+List1 = [1,2,3,4,5,6,7,8,9,10]
+Tuple = (1,2,3,4,5,6,7,8,9,10)
+Dict = {1:'John', 2:'Wick',3:'Barry', 4:'Allen'}
+print(f"{type(List1)}\n{type(tuple)}\n{type(Dict)}")
+```
+
 Python defines type conversion functions to directly convert one data type to another
 There are two types of Type Conversion in Python:
 
