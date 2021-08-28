@@ -7,6 +7,12 @@
 4. After installation open cmd (or Window power shell if you are using Windows) & type 'python', to see version only type 'python --version'
 5. Python is a high level, Poratable, Open Source & case sensitive language.
 
+
+# Topic 
+### Module
+### dir()
+
+
 ## Module
 A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include executable code.  
 A module can be categorizes into two type:
