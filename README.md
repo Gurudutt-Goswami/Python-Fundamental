@@ -11,7 +11,7 @@
 # Topic 
 1. [Module](#Module)
 2. [dir()](#dir()-Function)
-3. [What is pip?](#What-is-pip?)
+3. [What is pip?](#What-is-pip)
 4. [The REPL](#The-REPL)
 5. [Comments](#Comments)
 
@@ -39,7 +39,7 @@ from random import *
 print(dir(random))
 ```
 
-## What is pip?
+## What is pip
 Python pip is the package manager for Python packages. We can use pip to install packages that do not come with Python. The basic syntax of pip commands in command prompt is: 
 ```
 pip install flask
