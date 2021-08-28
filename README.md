@@ -226,11 +226,17 @@ print(f"{string}\n{name}\n{num}\n{flo}\n{li}\n{tup}\n{set1}")
 ```
 
 ## Strings
-String is a sequence of character enclosed in quotes. In other words, Strings are arrays of bytes representing Unicode characters.Square brackets can be used to access elements of the string.
+String is a sequence of character enclosed in quotes. In other words, Strings are arrays of bytes representing Unicode characters.Square brackets can be used to access elements of the string.Strings are immutable (not changeable), hence elements of a String cannot be changed once it has been assigned. Only new strings can be reassigned to the same name. 
 
 ### Indexing
 In Python, individual characters of a String can be accessed by using the method of Indexing. Indexing also allows negative address references to access characters from the back of the String, e.g. -1 refers to the last character, -2 refers to the second last character and so on. 
 While accessing an index out of the range will cause an **IndexError**. Only Integers are allowed to be passed as an index, float or other types will cause a **TypeError**. 
 
-
 ![strings](https://user-images.githubusercontent.com/86184439/131231705-b570ccde-5d1c-4522-9ad3-2e38bc5f27b4.jpg)
+```
+String1 = "Gurudutt Goswami"
+print(f"\nFirst character of String is: {String1[0]}\nLast character of String is: {String1[-1]}")
+```
+
+### String Slicing
+To access a range of characters in the String, method of slicing is used. Slicing in a String is done by using a Slicing operator (colon). 
