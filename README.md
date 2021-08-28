@@ -7,7 +7,7 @@
 4. After installation open cmd (or Window power shell if you are using Windows) & type 'python', to see version only type 'python --version'
 5. Python is a high level, Poratable, Open Source & case sensitive language.
 
-### Module
+## Module
 A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include executable code.  
 
 Note : We can use any Python source file as a module by executing an import statement in some other Python source file. 
@@ -27,7 +27,7 @@ from random import *
 print(dir(random))
 ```
 
-### What is pip?
+## What is pip?
 Python pip is the package manager for Python packages. We can use pip to install packages that do not come with Python. The basic syntax of pip commands in command prompt is: 
 ```
 pip install flask
@@ -52,19 +52,19 @@ The Python pip freeze command is used to list packages that don’t come pre-ins
 ```
 pip freeze
 ```
-### Listing Outdated Packages with pip
+##### Listing Outdated Packages with pip
 Python pip list –outdated command is used to list all the packages that are outdated. This command cross-checks the installed package information with the pip repository.
 ```
 pip list --outdated
 ```
-### Upgrading packages with pip
+##### Upgrading packages with pip
 Python pip install –user –upgrade is used to update a package.
 ```
 pip install --user --upgrade package_name
 We can also upgrade any package to a specific version using the below command.
 pip install --user --upgrade package_name==version
 ```
-### Downgrading packages with pip
+##### Downgrading packages with pip
 The Python pip install –user command is used to downgrade a package to the specific version.
 ```
 pip install --user package_name==version
