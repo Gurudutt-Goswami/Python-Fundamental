@@ -8,7 +8,7 @@
 5. Python is a high level, Poratable, Open Source & case sensitive language.
 
 
-# Topic 
+# Topics
 1. [Module](#Module)
 2. [dir()](#dir-Function)
 3. [What is pip?](#What-is-pip)
