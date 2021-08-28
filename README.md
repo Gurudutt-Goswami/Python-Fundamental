@@ -12,7 +12,7 @@
 1. [What is Module](#Module), [dir()](#dir-Function)
 2. [What is pip?](#What-is-pip),[The REPL](#The-REPL),[Comments](#Comments)
 3. [Variables In Python](#Variables-in-Python)
-4. [Type() & Type Conversion](#Type()-&-Type-Conversion), [Implicit Type Conversion](#1.-Implicit-Type-Conversion),[2. Explicit Type Conversion](#2.-Explicit-Type-Conversion)
+4. [Type() & Type Conversion](#Type-Function-and-Type-Conversion), [Implicit Type Conversion](#1-Implicit-Type-Conversion),[Explicit Type Conversion](#2-Explicit-Type-Conversion)
 
 
 ## Module
@@ -102,12 +102,12 @@ a = "Okay I got it"
 print(a)
 ```
 
-## Type() & Type Conversion
+## Type Function and Type Conversion
 
 Python defines type conversion functions to directly convert one data type to another
 There are two types of Type Conversion in Python:
 
-### 1. Implicit Type Conversion
+### 1 Implicit Type Conversion
 In Implicit type conversion of data types in Python, the Python interpreter automatically converts one data type to another without any user involvement.
 ```
 x = 10 
@@ -120,7 +120,7 @@ print("x is of type:",type(x))
 ```
 In above example, the type of ‘x’ got automatically changed to the “float” type from the “integer” type. this is a simple case of Implicit type conversion in python.
 
-### 2. Explicit Type Conversion
+### 2 Explicit Type Conversion
 In Explicit Type Conversion in Python, the data type is manually changed by the user as per their requirement.
 
     1. int(a, base): This function converts any data type to integer. ‘Base’ specifies the base in which string is if the data type is a string.
