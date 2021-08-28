@@ -39,7 +39,7 @@ from random import *
 print(dir(random))
 ```
 
-### What-is-pip
+## What-is-pip
 Rep Link : https://github.com/Gurudutt-Goswami/What-is-pip
 
 ### The REPL
