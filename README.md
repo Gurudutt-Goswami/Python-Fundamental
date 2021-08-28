@@ -9,11 +9,9 @@
 
 
 # Topics
-1. [Module](#Module)
-2. [dir()](#dir-Function)
-3. [What is pip?](#What-is-pip)
-4. [The REPL](#The-REPL)
-5. [Comments](#Comments)
+1. [Module](#Module), [dir()](#dir-Function)
+2. [What is pip?](#What-is-pip),[The REPL](#The-REPL),[Comments](#Comments)
+3. [Variables In Python]
 
 
 ## Module
@@ -55,4 +53,49 @@ multi
 line 
 comment
 '''
+```
+
+## Variables in Python
+We do not need to declare variables before using them or declare their type. A variable is created the moment we first assign a value to it. A variable is a name given to a memory location. It is the basic unit of storage in a program. The value stored in a variable can be changed during program execution.A variable is only a name given to a memory location, all the operations done on the variable effects that memory location.
+
+### Rules for creating variables in Python:
+A variable name must start with a letter or the underscore character.
+A variable name cannot start with a number.
+A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).
+Variable names are case-sensitive (name, Name and NAME are three different variables).
+The reserved words(keywords) cannot be used naming the variable.
+
+### Data Types
+```
+age = 45    #Integers
+salary = 1456.8 # A floating point
+name = "John"   # A string
+AmIProgrammer = True  #Boolean value
+WantToSaySomething = None
+print(f"Age : {age}\nSalary :{salary}\nName : {name}\nAmIProgrammer : {AmIProgrammer} \nWantToSaySomething : {WantToSaySomething}")
+```
+
+### Re-declare the Variable:
+We can re-declare the python variable once we have declared the variable already.
+```
+Number = 100
+print("Before declare: ", Number)
+Number = 120.3    # re-declare the var
+print("After re-declare:", Number)
+```
+### Assigning a single value to multiple variables
+```
+a = b = c = 10
+print(f"a : {a}\nb : {b}\nc : {c} ")
+```
+### Assigning different values to multiple variables
+```
+a, b, c = 1, 20.2, "Something is looking simple"
+print(f"a : {a}\nb : {b}\nc : {c} ")
+```
+### Can we use the same name for different types? : Yes 
+```
+a = 10
+a = "Okay I got it"
+print(a)
 ```
