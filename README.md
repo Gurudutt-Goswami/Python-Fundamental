@@ -19,8 +19,11 @@ The * symbol used with the from import the statement is used to import all the n
 from module_name import *
 ```
 
-### Basics
-print("Hello World !!!")
-Module 
-
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
