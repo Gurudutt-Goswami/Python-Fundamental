@@ -34,7 +34,7 @@ print(dir(random))
 Python pip is the package manager for Python packages. We can use pip to install packages that do not come with Python. The basic syntax of pip commands in command prompt is: 
 ```
 pip install flask
-```
+
 ##### Specifying Package Version
 We can also install the package of a specific version by using the below command.
 ```
