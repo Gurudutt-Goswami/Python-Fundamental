@@ -8,7 +8,7 @@
 5. Python is a high level, Poratable, Open Source & case sensitive language.
 
 ### Module
-A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include executable code.
+A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include executable code.  
 We can use any Python source file as a module by executing an import statement in some other Python source file. ```import calc```
 #### Python’s from statement lets you import specific attributes from a module. The from .. import .. has the following syntax:
 ```
