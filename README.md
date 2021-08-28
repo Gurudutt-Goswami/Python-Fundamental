@@ -11,8 +11,8 @@
 A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include executable code.  
 Note : We can use any Python source file as a module by executing an import statement in some other Python source file. ```import calc```
 #### Python’s from statement lets you import specific attributes from a module. The from .. import .. has the following syntax:
-```
-from math import sqrt, factorial
+```diff
+@@from math import sqrt, factorial
 ```
 The * symbol used with the from import the statement is used to import all the names from a module to a current namespace.
 ```
