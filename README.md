@@ -72,3 +72,17 @@ The Python pip install –user command is used to downgrade a package to the spe
 ```
 pip install --user package_name==version
 ```
+
+### The REPL
+REPL stands for Read, Evaluate, Print, Loop. The REPL is how you interact with the Python Interpreter. Its is also reffered as also termed an interactive toplevel or language shell. Unlike running a file containing Python code, in the REPL you can type commands and instantly see the output printed out.
+
+### Comments 
+Single Line ```#Code after hashtags are single line comments```
+```
+'''
+This is a 
+multi
+line 
+comment
+'''
+```
