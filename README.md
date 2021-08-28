@@ -13,6 +13,7 @@
 2. [What is pip?](#What-is-pip),[The REPL](#The-REPL),[Comments](#Comments)
 3. [Variables In Python](#Variables-in-Python)
 4. [Type() & Type Conversion](#Type-Function-and-Type-Conversion), [Implicit Type Conversion](#1-Implicit-Type-Conversion),[Explicit Type Conversion](#2-Explicit-Type-Conversion)
+5. [Input()](#Input-Function), [String](#Strings)
 
 
 ## Module
@@ -210,3 +211,26 @@ b = chr(77)
 print(a)
 print(b)
 ```
+
+## Input-Function
+```
+string = input()
+name = input("Enter your name: ")
+num = int(input("Enter a number: "))
+flo =float(input("Enter a number "))
+li =list(input("Enter a list "))
+tup =tuple(input("Enter a tuple "))
+set1 = set(input("Enter a set "))
+
+print(f"{string}\n{name}\n{num}\n{flo}\n{li}\n{tup}\n{set1}")
+```
+
+## Strings
+String is a sequence of character enclosed in quotes. In other words, Strings are arrays of bytes representing Unicode characters.Square brackets can be used to access elements of the string.
+
+### Indexing
+In Python, individual characters of a String can be accessed by using the method of Indexing. Indexing also allows negative address references to access characters from the back of the String, e.g. -1 refers to the last character, -2 refers to the second last character and so on. 
+While accessing an index out of the range will cause an **IndexError**. Only Integers are allowed to be passed as an index, float or other types will cause a **TypeError**. 
+
+
+![strings](https://user-images.githubusercontent.com/86184439/131231705-b570ccde-5d1c-4522-9ad3-2e38bc5f27b4.jpg)
