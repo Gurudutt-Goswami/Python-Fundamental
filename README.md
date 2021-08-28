@@ -12,6 +12,7 @@
 1. [What is Module](#Module), [dir()](#dir-Function)
 2. [What is pip?](#What-is-pip),[The REPL](#The-REPL),[Comments](#Comments)
 3. [Variables In Python](#Variables-in-Python)
+4. [Type() & Type Conversion](#Type()-&-Type-Conversion), [Implicit Type Conversion](#1.-Implicit-Type-Conversion),[2. Explicit Type Conversion](#2.-Explicit-Type-Conversion)
 
 
 ## Module
@@ -106,7 +107,7 @@ print(a)
 Python defines type conversion functions to directly convert one data type to another
 There are two types of Type Conversion in Python:
 
-1. Implicit Type Conversion
+### 1. Implicit Type Conversion
 In Implicit type conversion of data types in Python, the Python interpreter automatically converts one data type to another without any user involvement.
 ```
 x = 10 
@@ -119,28 +120,29 @@ print("x is of type:",type(x))
 ```
 In above example, the type of ‘x’ got automatically changed to the “float” type from the “integer” type. this is a simple case of Implicit type conversion in python.
 
-2. Explicit Type Conversion
+### 2. Explicit Type Conversion
 In Explicit Type Conversion in Python, the data type is manually changed by the user as per their requirement.
 
-1. int(a, base): This function converts any data type to integer. ‘Base’ specifies the base in which string is if the data type is a string.
-2. float(): This function is used to convert any data type to a floating-point number 
-3. ord() : This function is used to convert a character to integer.
-4. hex() : This function is to convert integer to hexadecimal string.
-5. oct() : This function is to convert integer to octal string.
-6. tuple() : This function is used to convert to a tuple.
-7. set() : This function returns the type after converting to set.
-8. list() : This function is used to convert any data type to a list type.
-9. dict() : This function is used to convert a tuple of order (key,value) into a dictionary.
-10. str() : Used to convert integer into a string.
-11. complex(real,imag) : : This function converts real numbers to complex(real,imag) number.
-12. chr(number) : : This function converts number to its corresponding ASCII character.
+    1. int(a, base): This function converts any data type to integer. ‘Base’ specifies the base in which string is if the data type is a string.
+    2. float(): This function is used to convert any data type to a floating-point number 
+    3. ord() : This function is used to convert a character to integer.
+    4. hex() : This function is to convert integer to hexadecimal string.
+    5. oct() : This function is to convert integer to octal string.
+    6. tuple() : This function is used to convert to a tuple.
+    7. set() : This function returns the type after converting to set.
+    8. list() : This function is used to convert any data type to a list type.
+    9. dict() : This function is used to convert a tuple of order (key,value) into a dictionary.
+    10. str() : Used to convert integer into a string.
+    11. complex(real,imag) : : This function converts real numbers to complex(real,imag) number.
+    12. chr(number) : : This function converts number to its corresponding ASCII character.
 
 ```
 s = "10010"
 
 #1
 # printing string converting to int base 2
-print (f"After converting to integer base 2 : {int(s,8)}")\
+print (f"After converting to integer base 2 : {int(s,8)}")
+
 #2
 # printing string converting to float
 print (f"After converting to float : {float(s)}")
@@ -150,9 +152,11 @@ s = '4'
 #3
 # printing character converting to integer
 print (f"After converting character to integer : {ord(s)}")
+
 #4
 # printing integer converting to hexadecimal string
 print (f"After converting 56 to hexadecimal string : {hex(56)}")
+
 #5
 # printing integer converting to octal string
 print (f"After converting 56 to octal string : {oct(56)}")
@@ -162,9 +166,11 @@ s = 'Gurudutt Goswami'
 #6
 # printing string converting to tuple
 print (f"After converting string to tuple : {tuple(s)}")
+
 #7
 # printing string converting to set
 print (f"After converting string to set : {set(s)}")
+
 #8
 # printing string converting to list
 print (f"After converting string to list : {list(s)}")
@@ -174,9 +180,11 @@ b = 2
 #9
 # printing integer converting to complex number
 print (f"After converting integer to complex number : {complex(1,2)}")
+
 #10
 # printing integer converting to string
 print (f"After converting integer to string : {str(a)}")
+
 #11
 # initializing tuple
 tup = (('a', 1) ,('f', 2), ('g', 3))
