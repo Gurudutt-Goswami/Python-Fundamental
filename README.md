@@ -226,15 +226,16 @@ print(f"{string}\n{name}\n{num}\n{flo}\n{li}\n{tup}\n{set1}")
 ```
 
 ## Strings
-1. String is a sequence of character enclosed in quotes. 
+1. String is a ```sequence of characters enclosed in quotes```. (Quotes can be single, double or triple).
 2. In other words, Strings are arrays of bytes representing Unicode characters.
 3. Square brackets can be used to access elements of the string.
-4. Strings are immutable (not changeable), hence elements of a String cannot be changed once it has been assigned. Only new strings can be reassigned to the same name. 
+4. ```Strings are immutable (not changeable)```, hence elements of a String cannot be changed once it has been assigned. Only new strings can be reassigned to the same name. 
 
 ### Indexing
 1. In Python, individual characters of a String can be accessed by using the method of Indexing. 
 2. Indexing also allows negative address references to access characters from the back of the String, e.g. -1 refers to the last character, -2 refers to the second last character and so on. 
-3. While accessing an index out of the range will cause an ```diff @@IndexError@@ ``` . Only Integers are allowed to be passed as an index, float or other types will cause a ```diff @@TypeError@@ ```. 
+3. While accessing an index out of the range will cause an ```IndexError``` . Only Integers are allowed to be passed as an index, float or other types will cause a ```TypeError```. 
+4. The index of a string ```from 0 to (Length-1)``` in python.
 
 ![strings](https://user-images.githubusercontent.com/86184439/131231705-b570ccde-5d1c-4522-9ad3-2e38bc5f27b4.jpg)
 ```
@@ -243,4 +244,36 @@ print(f"\nFirst character of String is: {String1[0]}\nLast character of String i
 ```
 
 ### String Slicing
-To access a range of characters in the String, method of slicing is used. Slicing in a String is done by using a Slicing operator (colon). 
+1. To access a range of characters in the String, method of slicing is used. Slicing in a String is done by using a Slicing operator (colon). 
+2. In order to slice we use use : ```S1 = name_of_string [start_index : end_index]```
+```
+String1 = "Gurudutt Goswami"
+print(String1[3:12])
+print(String1[3:-2])
+print(String1[:16]) #Equivalent to string1[0:16]
+print(String1[0:])  #Equivalent to string1[0:16]
+print(String1[1:6:2])   #Third parameter is Step size
+```
+
+### Escape Sequence
+Escape sequences start with a backslash and can be interpreted differently.  
+To ignore the escape sequences in a String, r or R is used, this implies that the string is a raw string and escape sequences inside it are to be ignored.
+
+1. \'	Single Quote	
+2. \\	Backslash	
+3. \n	New Line	
+4. \r	Carriage Return	
+5. \t	Tab	
+6. \b	Backspace	
+7. \f	Form Feed	
+8. \ooo	Octal value	
+9. \xhh	Hex value
+ 
+To check their implementation refer : https://www.w3schools.com/python/gloss_python_escape_characters.asp
+```
+String1 = "This is \x47\x65\x65\x6b\x73 in \x48\x45\x58"
+print(f"\nPrinting in HEX with the use of Escape Sequences: {String1}")
+ # Using raw String to ignore Escape Sequences
+String1 = r"This is \x47\x65\x65\x6b\x73 in \x48\x45\x58"
+print(f"Printing Raw String in HEX Format: {String1}")
+```
