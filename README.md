@@ -282,3 +282,65 @@ print(f"Printing Raw String in HEX Format: {String1}")
 ### String Functions
 1. https://docs.python.org/2.5/lib/string-methods.html
 2. https://www.w3schools.com/python/python_ref_string.asp
+
+
+## Lists & Typles
+Lists are just like dynamic sized arrays. Lists ```need not be homogeneous always``` which makes it a most powerful tool in Python. A single list may contain DataTypes like Integers, Strings, as well as Objects. ```Lists are mutable, and hence, they can be altered even after their creation.```
+
+```List in Python are ordered and have a definite count.```The elements in a list are indexed according to a definite sequence and the indexing of a list is done with 0 being the first index. Each element in the list has its definite place in the list, which allows duplicating of elements in the list, with each element having its own distinct place and credibility.
+
+Note- Lists are a useful tool for preserving a sequence of data and further iterating over it.
+
+### Creating a list
+Lists in Python can be created by just placing the sequence inside the square brackets[]
+```
+# Creating a List
+Blank_List = []
+print(f"Blank List: {Blank_List}")
+
+#Accessing list using index
+List = [1,34,5,67,6,"Geeks", "For", "Geeks",False,None,45]
+print(f"5th Element of list :{List[4]}\n8th Element of list :{List[10]}") 
+
+# Creating a Multi-Dimensional List (By Nesting a list inside a List)
+Multi_Dim_List = [['Geeks', 'For'] , ['Geeks']]
+print(F"\nMulti-Dimensional List: {Multi_Dim_List}")
+```
+
+### Size of List 
+```
+List2 = [10, 20, 14]
+print(len(List2))
+```
+
+### Adding Elements to a List
+1. Elements can be added to the List by using built-in ```append()``` function. 
+2. Only one element at a time can be added to the list by using append() method, for addition of multiple elements with the append() method, loops are used. 
+3. Tuples can also be added to the List with the use of append method because ```tuples are immutable.
+4. Unlike Sets, Lists can also be added to the existing list with the use of append() method.```
+
+```
+# Creating a List
+List = []
+print(f"Initial blank List: {List}")
+  
+# Addition of Elements in the List
+List.append(1)
+List.append(2)
+List.append(4)
+print("\nList after Addition of Three elements: {List}")
+  
+# Adding elements to the List using Iterator
+for i in range(1, 4):
+    List.append(i)
+print(f"\nList after Addition of elements from 1-3: {List}")
+  
+# Adding Tuples to the List
+List.append((5, 6))
+print(f"\nList after Addition of a Tuple: {List}")
+  
+# Addition of List to a List
+List2 = ['For', 'Geeks']
+List.append(List2)
+print(f"\nList after Addition of a List: {List}")
+```
