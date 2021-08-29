@@ -9,11 +9,11 @@
 
 
 # Topics
-1. [What is Module](#Module), [dir()](#dir-Function)
-2. [What is pip?](#What-is-pip),[The REPL](#The-REPL),[Comments](#Comments)
+1. [What is Module](#Module) , [dir()](#dir-Function)
+2. [What is pip?](#What-is-pip) , [The REPL](#The-REPL),[Comments](#Comments)
 3. [Variables In Python](#Variables-in-Python)
-4. [Type() & Type Conversion](#Type-Function-and-Type-Conversion), [Implicit Type Conversion](#1-Implicit-Type-Conversion),[Explicit Type Conversion](#2-Explicit-Type-Conversion)
-5. [Input()](#Input-Function), [String](#Strings)
+4. [Type() & Type Conversion](#Type-Function-and-Type-Conversion), [Implicit Type Conversion](#1-Implicit-Type-Conversion) , [Explicit Type Conversion](#2-Explicit-Type-Conversion)
+5. [Input()](#Input-Function), [String](#Strings) , [Indexing](#Indexing) , [Slicing] 
 
 
 ## Module
@@ -273,7 +273,8 @@ To check their implementation refer : https://www.w3schools.com/python/gloss_pyt
 ```
 String1 = "This is \x47\x65\x65\x6b\x73 in \x48\x45\x58"
 print(f"\nPrinting in HEX with the use of Escape Sequences: {String1}")
- # Using raw String to ignore Escape Sequences
+
+# Using raw String to ignore Escape Sequences
 String1 = r"This is \x47\x65\x65\x6b\x73 in \x48\x45\x58"
 print(f"Printing Raw String in HEX Format: {String1}")
 ```
