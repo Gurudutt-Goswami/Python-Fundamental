@@ -234,7 +234,7 @@ print(f"{string}\n{name}\n{num}\n{flo}\n{li}\n{tup}\n{set1}")
 ### Indexing
 1. In Python, individual characters of a String can be accessed by using the method of Indexing. 
 2. Indexing also allows negative address references to access characters from the back of the String, e.g. -1 refers to the last character, -2 refers to the second last character and so on. 
-3. While accessing an index out of the range will cause an --diff @@IndexError** @@-- . Only Integers are allowed to be passed as an index, float or other types will cause a **TypeError**. 
+3. While accessing an index out of the range will cause an ```diff @@IndexError@@ ``` . Only Integers are allowed to be passed as an index, float or other types will cause a ```diff @@TypeError@@ ```. 
 
 ![strings](https://user-images.githubusercontent.com/86184439/131231705-b570ccde-5d1c-4522-9ad3-2e38bc5f27b4.jpg)
 ```
