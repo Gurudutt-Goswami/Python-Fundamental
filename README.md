@@ -13,7 +13,7 @@
 2. [What is pip?](#What-is-pip) , [The REPL](#The-REPL),[Comments](#Comments)
 3. [Variables In Python](#Variables-in-Python)
 4. [Type() & Type Conversion](#Type-Function-and-Type-Conversion), [Implicit Type Conversion](#1-Implicit-Type-Conversion) , [Explicit Type Conversion](#2-Explicit-Type-Conversion)
-5. [Input()](#Input-Function), [String](#Strings) , [Indexing](#Indexing) , [Slicing] 
+5. [Input()](#Input-Function), [String](#Strings) , [Indexing](#Indexing) , [Slicing](#String-Slicing), [Escape Sequence](#Escape-Sequence) , [String Functions](#String-Functions)
 
 
 ## Module
