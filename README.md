@@ -14,6 +14,7 @@
 3. [Variables In Python](#Variables-in-Python)
 4. [Type() & Type Conversion](#Type-Function-and-Type-Conversion), [Implicit Type Conversion](#1-Implicit-Type-Conversion) , [Explicit Type Conversion](#2-Explicit-Type-Conversion)
 5. [Input()](#Input-Function), [String](#Strings) , [Indexing](#Indexing) , [Slicing](#String-Slicing), [Escape Sequence](#Escape-Sequence) , [String Functions](#String-Functions)
+6. [Lists and Typles](#Lists-and-Typles) , [Creating a list](#Creating-a-list) , [Size of List](#Size-of-List) , [Adding Elements to a List](#Adding-Elements-to-a-List) 
 
 
 ## Module
@@ -284,7 +285,7 @@ print(f"Printing Raw String in HEX Format: {String1}")
 2. https://www.w3schools.com/python/python_ref_string.asp
 
 
-## Lists & Typles
+## Lists and Typles
 Lists are just like dynamic sized arrays. Lists ```need not be homogeneous always``` which makes it a most powerful tool in Python. A single list may contain DataTypes like Integers, Strings, as well as Objects. ```Lists are mutable, and hence, they can be altered even after their creation.```
 
 ```List in Python are ordered and have a definite count.```The elements in a list are indexed according to a definite sequence and the indexing of a list is done with 0 being the first index. Each element in the list has its definite place in the list, which allows duplicating of elements in the list, with each element having its own distinct place and credibility.
