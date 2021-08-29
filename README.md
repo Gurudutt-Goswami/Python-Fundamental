@@ -245,7 +245,7 @@ print(f"\nFirst character of String is: {String1[0]}\nLast character of String i
 
 ### String Slicing
 1. To access a range of characters in the String, method of slicing is used. Slicing in a String is done by using a Slicing operator (colon). 
-2. In order to slice we use use : ```S1 = name_of_string [start_index : end_index]```
+2. In order to slice we use use : ```S1 = name_of_string [start_index : end_index : step-size]```
 ```
 String1 = "Gurudutt Goswami"
 print(String1[3:12])
