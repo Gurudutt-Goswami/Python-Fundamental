@@ -277,3 +277,7 @@ print(f"\nPrinting in HEX with the use of Escape Sequences: {String1}")
 String1 = r"This is \x47\x65\x65\x6b\x73 in \x48\x45\x58"
 print(f"Printing Raw String in HEX Format: {String1}")
 ```
+
+### String Functions
+1. https://docs.python.org/2.5/lib/string-methods.html
+2. https://www.w3schools.com/python/python_ref_string.asp
