@@ -45,7 +45,7 @@ print(dir(random))
 Rep Link : https://github.com/Gurudutt-Goswami/What-is-pip
 
 ### The REPL
-REPL stands for Read, Evaluate, Print, Loop. The REPL is how you interact with the Python Interpreter. Its is also reffered as also termed an interactive toplevel or language shell. Unlike running a file containing Python code, in the REPL you can type commands and instantly see the output printed out.
+REPL stands for Read, Evaluate, Print, Loop. The REPL is how you interact with the Python Interpreter. Its is also reffered as an interactive toplevel or language shell. Unlike running a file containing Python code, in the REPL you can type commands and instantly see the output printed out.
 
 ### Comments 
 1. Single Line ```#Code after hashtags are single line comments```
