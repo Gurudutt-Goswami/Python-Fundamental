@@ -12,7 +12,7 @@
 # Topics
 1. [What is Module](#Module) , [dir()](#dir-Function)
 2. [What is pip?](#What-is-pip) , [The REPL](#The-REPL),[Comments](#Comments)
-3. [Variables In Python](#Variables-in-Python)
+3. [Variables In Python](#Variables-in-Python) , [Operators](#Operators)
 4. [Type() & Type Conversion](#Type-Function-and-Type-Conversion), [Implicit Type Conversion](#1-Implicit-Type-Conversion) , [Explicit Type Conversion](#2-Explicit-Type-Conversion)
 5. [Input()](#Input-Function), [String](#Strings) , [Indexing](#Indexing) , [Slicing](#String-Slicing), [Escape Sequence](#Escape-Sequence) , [String Functions](#String-Functions)
 6. [Lists and Typles](#Lists-and-Typles) , [Creating a list](#Creating-a-list) , [Size of List](#Size-of-List) , [Adding Elements to a List](#Adding-Elements-to-a-List) 
@@ -105,6 +105,13 @@ a = 10
 a = "Okay I got it"
 print(a)
 ```
+
+### Operators
+Arithmatic Operators: +,-,/,*
+Assignment Operators: =,+=,-=, etc
+Comparison Operators: ==,>,<,>=,<=,!= (Returns Boolean)
+Logical Operators: and, or , Not
+
 
 ## Type Function and Type Conversion
 
