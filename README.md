@@ -38,7 +38,7 @@ from module_name import *
 The dir() built-in function returns a sorted list of strings containing the names defined by a module. The list contains the names of all the modules, variables, and functions that are defined in a module.
 ```
 from random import *
-print(dir(random))
+print(dir(random)) #Here instead of 'random' we can put any module name & its corresponding details will up as a list 
 ```
 
 ## What-is-pip
