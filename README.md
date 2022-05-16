@@ -21,7 +21,7 @@
 ## Module
 A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include executable code.  
 A module can be categorizes into two type:
-  1. Built-in modules: os,abc etc.
+  1. Built-in modules: os,abc etc. (https://docs.python.org/3/py-modindex.html)
   2. Exteranl Modules: tensorflow, flask etc.
 
 Note : We can use any Python source file as a module by executing an import statement in some other Python source file. 
