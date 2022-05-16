@@ -5,7 +5,7 @@
 2. Microsoft Visual Studio Code : https://code.visualstudio.com/download
 3. Imp Extensions for Visual Studio Code : Python, Pylance,Material Icon Theme, Live Server, DJango (VSCode is IDE cum source code Editor)
 4. After installation open cmd (or Window power shell if you are using Windows) & type 'python', to see version only type 'python --version'
-5. Python is a ```high level, Portable, Open Source & case sensitive language.```
+5. Python is a ```high level, Portable(Works on Linux/Windows/Mac) , Open Source & case sensitive language.```
 
 
 # Topics
