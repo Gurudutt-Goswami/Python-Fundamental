@@ -107,10 +107,10 @@ print(a)
 ```
 
 ### Operators
-Arithmatic Operators: +,-,/,*
-Assignment Operators: =,+=,-=, etc
-Comparison Operators: ==,>,<,>=,<=,!= (Returns Boolean)
-Logical Operators: and, or , Not
+1. Arithmatic Operators: +,-,/,*
+2. Assignment Operators: =,+=,-=, etc
+3. Comparison Operators: ==,>,<,>=,<=,!= (Returns Boolean)
+4. Logical Operators: and, or , Not
 
 
 ## Type Function and Type Conversion
