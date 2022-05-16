@@ -47,7 +47,8 @@ Rep Link : https://github.com/Gurudutt-Goswami/What-is-pip
 ### The REPL
 REPL stands for Read, Evaluate, Print, Loop. The REPL is how you interact with the Python Interpreter. Its is also reffered as an interactive toplevel or language shell. Unlike running a file containing Python code, in the REPL you can type commands and instantly see the output printed out.
 
-### Comments 
+### Comments
+Tip: To comment any line(/s) in VSCode just press 'Ctrl+/' (Forward Slash)
 1. Single Line ```#Code after hashtags are single line comments```
 2. Multiline
 ```
