@@ -356,3 +356,24 @@ List2 = ['For', 'Geeks']
 List.append(List2)
 print(f"\nList after Addition of a List: {List}")
 ```
+
+
+### List Functions
+https://docs.python.org/3/tutorial/datastructures.html
+https://www.w3schools.com/python/python_ref_list.asp
+```
+b=[23,4,1,56,75,35,42]
+b.sort()    #Sort the elements of list 
+print(b)    #[1, 4, 23, 35, 42, 56, 75]
+b.reverse() #Reverse the elements of list 
+print(b)    #[75, 56, 42, 35, 23, 4, 1]
+b.append(100) #Appends to the end of list
+print(b)    #[75, 56, 42, 35, 23, 4, 1, 100]
+b.insert(3,546) #Inserts 546 at index 3
+print(b)    #75, 56, 42, 546, 35, 23, 4, 1, 100]  
+b.pop(4)    #Removes element present at index 4
+print(b)    #[75, 56, 42, 546, 23, 4, 1, 100]
+b.remove(546)   #Remove 546 from list
+print(b)    #[75, 56, 42, 23, 4, 1, 100]
+print(sum(b))
+```
