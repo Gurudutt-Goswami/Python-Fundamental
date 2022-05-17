@@ -15,7 +15,7 @@
 3. [Variables In Python](#Variables-in-Python) , [Operators](#Operators)
 4. [Type() & Type Conversion](#Type-Function-and-Type-Conversion), [Implicit Type Conversion](#1-Implicit-Type-Conversion) , [Explicit Type Conversion](#2-Explicit-Type-Conversion)
 5. [Input()](#Input-Function), [String](#Strings) , [Indexing](#Indexing) , [Slicing](#String-Slicing), [Escape Sequence](#Escape-Sequence) , [String Functions](#String-Functions)
-6. [Lists and Typles](#Lists-and-Typles) , [Creating a list](#Creating-a-list) , [Size of List](#Size-of-List) , [Adding Elements to a List](#Adding-Elements-to-a-List), [List Functions][#List-Functions]
+6. [Lists and Typles](#Lists-and-Typles) , [Creating a list](#Creating-a-list) , [Size of List](#Size-of-List) , [Adding Elements to a List](#Adding-Elements-to-a-List), [List Functions](#List-Functions)
 
 
 ## Module
@@ -359,8 +359,8 @@ print(f"\nList after Addition of a List: {List}")
 
 
 ### List Functions
-https://docs.python.org/3/tutorial/datastructures.html
-https://www.w3schools.com/python/python_ref_list.asp
+1. https://docs.python.org/3/tutorial/datastructures.html
+2. https://www.w3schools.com/python/python_ref_list.asp
 ```
 b=[23,4,1,56,75,35,42]
 b.sort()    #Sort the elements of list 
