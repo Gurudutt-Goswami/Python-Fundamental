@@ -312,7 +312,7 @@ print(f"Blank List: {Blank_List}")
 
 #Accessing list using index
 List = [1,34,5,67,6,"Geeks", "For", "Geeks",False,None,45]
-print(f"5th Element of list :{List[4]}\n8th Element of list :{List[10]}") 
+print(f"5th Element of list :{List[4]}\n8th Element of list :{List[7]}") 
 
 # Creating a Multi-Dimensional List (By Nesting a list inside a List)
 Multi_Dim_List = [['Geeks', 'For'] , ['Geeks']]
