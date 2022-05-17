@@ -223,6 +223,7 @@ print(b)
 ```
 
 ## Input-Function
+This function allows the user to take input from the keyboard as a string.
 ```
 string = input()
 name = input("Enter your name: ")
