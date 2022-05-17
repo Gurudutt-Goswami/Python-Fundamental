@@ -291,7 +291,7 @@ print(f"Printing Raw String in HEX Format: {String1}")
 ```
 
 ### String Functions
-len(), string.endswith('dutt'),string.count("a"),string.capitalise(),string.find(),string.replace()
+Some Examples : len(), string.endswith('dutt'), string.count("a"), string.capitalise(), string.find(), string.replace()
 1. https://docs.python.org/2.5/lib/string-methods.html
 2. https://www.w3schools.com/python/python_ref_string.asp
 
