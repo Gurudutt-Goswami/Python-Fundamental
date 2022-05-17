@@ -15,8 +15,8 @@
 3. [Variables In Python](#Variables-in-Python) , [Operators](#Operators)
 4. [Type() & Type Conversion](#Type-Function-and-Type-Conversion), [Implicit Type Conversion](#1-Implicit-Type-Conversion) , [Explicit Type Conversion](#2-Explicit-Type-Conversion)
 5. [Input()](#Input-Function), [String](#Strings) , [Indexing](#Indexing) , [Slicing](#String-Slicing), [Escape Sequence](#Escape-Sequence) , [String Functions](#String-Functions)
-6. [Lists and Typles](#Lists-and-Typles) , [Creating a list](#Creating-a-list) , [Size of List](#Size-of-List) , [Adding Elements to a List](#Adding-Elements-to-a-List), [List Functions](#List-Functions)
-
+6. [Lists](#Lists) , [Creating a list](#Creating-a-list) , [Size of List](#Size-of-List) , [Adding Elements to a List](#Adding-Elements-to-a-List), [List Functions](#List-Functions)
+7. [Tuples](#Tuples), [Creating a Tuple](#Creating-a-Tuple), [Deleting a Tuple](#Deleting-a-Tuple), [Converting List into Tuple](#Converting-List-into-Tuple)], [Tuples Functions](Tuple-Functions)
 
 ## Module
 A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include executable code.  
@@ -296,7 +296,7 @@ Some Examples : len(), string.endswith('dutt'), string.count("a"), string.capita
 2. https://www.w3schools.com/python/python_ref_string.asp
 
 
-## Lists and Typles
+## Lists
 Lists are just like dynamic sized arrays. Lists ```need not be homogeneous always``` which makes it a most powerful tool in Python. A single list may contain DataTypes like Integers, Strings, as well as Objects. ```Lists are mutable, and hence, they can be altered even after their creation.```
 
 ```List in Python are ordered and have a definite count.```The elements in a list are indexed according to a definite sequence and the indexing of a list is done with 0 being the first index. Each element in the list has its definite place in the list, which allows duplicating of elements in the list, with each element having its own distinct place and credibility.
@@ -377,3 +377,55 @@ b.remove(546)   #Remove 546 from list
 print(b)    #[75, 56, 42, 23, 4, 1, 100]
 print(sum(b))
 ```
+
+
+### Tuples
+1. A Tuple is a collection of Python objects separated by commas.
+2. Like Lists Tuples can also contains different types of data type elements.
+3. Unlike lists Tuples are immutable.
+```
+#This code will throw error
+tuple1 = (0, 1, 2, 3)
+tuple1[0] = 4
+print(tuple1)
+```
+
+### Creating a Tuple
+```
+t1 = ()     #Empty tuple
+t2 = (1,)   #Tuple with single element t2=(1) is wrong way
+```
+
+There are two ways for creating tuples
+```
+# One way of creation
+tup = 'python', 'is','good'
+print(tup)
+ 
+# Another for doing the same
+tup = ('python', 'is','good')
+print(tup)
+```
+
+### Deleting a Tuple
+```
+tuple3 = ( 0, 1)
+del tuple3
+print(tuple3)
+```
+
+### Converting List into Tuple
+```
+list1 = [0, 1, 2]
+print(tuple(list1))
+print(tuple('python'))
+```
+
+### Tuple Functions
+```
+t = (1,45,23,56,"Guru",1,1,1,1)
+print(t.count(1))   #Return number of occurrences of 1
+print(t.index(23))  #Return index of 23 else will give error
+print(len(t))       #Return length of the tuple
+```
+
