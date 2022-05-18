@@ -506,6 +506,7 @@ print(myDict)
 #### Note: If your new dictionary contains a key which is already present in the main dictionary then after update its existing key value is going to be updated with new value.
 
 
+
 ### Sets
 1. Collection of non-repetitive elements that means sets can’t contain duplicate values even if you provide duplicate values it will still show a unique set of values.
 2. Also this is hashable that means you can’t change its values just like a tuple & that's why you cannot add a list or dictionary in a set as they are unhashable.
@@ -532,12 +533,13 @@ print(set)  #{18, 18.1, '18'}
 ```
 
 ### Adding elements in a set
+```
 a = set()
 a.add(4)
 a.add(6)
 a.add((3,4,5)) 
 print(a)	 #{(3, 4, 5), 4, 6}
-
+```
 
 ### Set Functions
 Some Examples : Remove(), Len(), Pop(), Union(), Intersection(), add()
