@@ -17,6 +17,7 @@
 5. [Input()](#Input-Function), [String](#Strings) , [Indexing](#Indexing) , [Slicing](#String-Slicing), [Escape Sequence](#Escape-Sequence) , [String Functions](#String-Functions)
 6. [Lists](#Lists) , [Creating a list](#Creating-a-list) , [Size of List](#Size-of-List) , [Adding Elements to a List](#Adding-Elements-to-a-List), [List Functions](#List-Functions)
 7. [Tuples](#Tuples), [Creating a Tuple](#Creating-a-Tuple), [Deleting a Tuple](#Deleting-a-Tuple), [Converting List into Tuple](#Converting-List-into-Tuple), [Tuple Functions](#Tuple-Functions)
+8. 
 
 ## Module
 A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include executable code.  
@@ -430,4 +431,76 @@ print(t.count(1))   #Return number of occurrences of 1
 print(t.index(23))  #Return index of 23 else will give error
 print(len(t))       #Return length of the tuple
 ```
+
+
+### Dictionary
+
+Dictionary: Collection of key value pairs 
+•	It is unordered
+•	It is mutable (Changeable)
+•	It is Indexed
+•	Cannot contain duplicate keys
+•	A dictionary can contain other dictionaries
+Note : Dictionary keys are case sensitive.
+
+```
+myDict = {
+"Fast":"In a Quick Manner",
+"Telegram": "Post Card",
+"l1": [1,2,4,5,56],
+"anotherdict": {'fun':'comedy'},    #Dict with in Dict
+1:345
+}
+
+print(myDict)
+
+#Indexing
+print(myDict['l1']) 
+
+#Dictionaries are mutable
+myDict['l1'] = [23,4,56,67,78,89]
+print(myDict)
+
+#Printing Dict with in Dict elements
+print(myDict['anotherdict']['fun']) 
+```
+
+### Dictionary Functions
+
+Some Examples : Keys(), values(), items(), get()
+```
+myDict = {
+"Fast":"In a Quick Manner",
+"Telegram": "Post Card",
+"l1": [1,2,4,5,56],
+"anotherdict": {'fun':'comedy'},
+1:345
+}
+print(myDict.keys())  #Prints the keys of dictionary
+print(myDict.values()) #Prints the values of dictionary
+print(myDict.items())   #Prints all dictionary elements as a 'DictItems' data types
+print(type(myDict.keys())) #Prints type of dictionary i.e.,<class 'dict_keys'>
+print(list(myDict.keys()))  #Printing dictionary keys as a list 
+print(myDict.get("Something")) #This will return value is key if it exist else none
+#print(myDict["Something"]) #But this will throw error if key is not present
+print(myDict)
+```
+
+### Dictionary with in a dictionary using update function
+```
+myDict = {
+"Fast":"In a Quick Manner",
+"Telegram": "Post Card",
+"l1": [1,2,4,5,56],
+"anotherdict": {'fun':'comedy'},
+1:345
+}
+updateDict = {
+    "Life":"Nature",
+    "Animal": "Dog"
+}
+myDict.update(updateDict)
+print(myDict)
+```
+#### Note: If your new dictionary contains a key which is already present in the main dictionary then after update its existing key value is going to be updated with new value.
 
