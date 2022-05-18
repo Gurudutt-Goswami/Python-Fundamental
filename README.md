@@ -382,7 +382,8 @@ print(sum(b))
 ### Tuples
 1. A Tuple is a collection of Python objects separated by commas.
 2. Like Lists Tuples can also contains different types of data type elements.
-3. Unlike lists Tuples are immutable. Example 
+3. You can simply access tuple elements just like a list elements, I mean indexing and slicing.
+4. Unlike lists Tuples are immutable. Example 
 ```
 #This code will throw error
 
