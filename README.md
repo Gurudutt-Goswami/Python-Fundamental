@@ -505,3 +505,56 @@ print(myDict)
 ```
 #### Note: If your new dictionary contains a key which is already present in the main dictionary then after update its existing key value is going to be updated with new value.
 
+
+### Sets
+1. Collection of non-repetitive elements that means sets can’t contain duplicate values even if you provide duplicate values it will still show a unique set of values.
+2. Also this is hashable that means you can’t change its values just like a tuple & that's why you cannot add a list or dictionary in a set as they are unhashable.
+3. Sets are unordered.
+4. Sets are unindexed (you can’t access elements with index)
+5. There are no ways to change items in a set
+
+```
+a = {1,2,5,3,5,3,67,78}
+print(a)    #{1, 2, 3, 67, 5, 78}
+print(type(a)) #<class 'set'>
+```
+
+Note: 
+1. Following lines will create an empty dictionary not empty set.
+```
+b = {}
+b = set()	#This Line will create an empty set
+```
+2. Set can have different types of values in it
+```
+set = {18,"18",18.1}
+print(set)  #{18, 18.1, '18'}
+```
+
+### Adding elements in a set
+a = set()
+a.add(4)
+a.add(6)
+a.add((3,4,5)) 
+print(a)	 #{(3, 4, 5), 4, 6}
+
+
+### Set Functions
+Some Examples : Remove(), Len(), Pop(), Union(), Intersection(), add()
+```
+#Remove 6 from 'a' set
+a.remove(6)     
+
+#Prints length of a set
+print("Length of a : ",len(a))
+
+#Remove an element from a set
+print(a.pop())  
+
+#Clears entire set 
+print(a.clear())
+
+print("Intersection : ",a.intersection({6,456}))
+
+print("Union : ", a.union({8,11,45,37}))
+```
