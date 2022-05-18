@@ -436,12 +436,13 @@ print(len(t))       #Return length of the tuple
 ### Dictionary
 
 Dictionary: Collection of key value pairs 
-•	It is unordered
-•	It is mutable (Changeable)
-•	It is Indexed
-•	Cannot contain duplicate keys
-•	A dictionary can contain other dictionaries
-Note : Dictionary keys are case sensitive.
+1. It is unordered
+2. It is mutable (Changeable)
+3. It is Indexed
+4. Cannot contain duplicate keys
+5. A dictionary can contain other dictionaries
+
+#### Note : Dictionary keys are case sensitive.
 
 ```
 myDict = {
