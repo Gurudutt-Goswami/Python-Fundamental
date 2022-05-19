@@ -19,6 +19,7 @@
 7. [Tuples](#Tuples), [Creating a Tuple](#Creating-a-Tuple), [Deleting a Tuple](#Deleting-a-Tuple), [Converting List into Tuple](#Converting-List-into-Tuple), [Tuple Functions](#Tuple-Functions)
 8. [Dictionary](#Dictionary), [Dictionary Functions](#Dictionary-Functions), [Dictionary with in a dictionary using update function](#Dictionary-with-in-a-dictionary-using-update-function)
 9. [Sets](#Sets), [Adding elements in a set](#Adding-elements-in-a-set), [Set Functions](#Set-Functions)
+10. [Conditional Statements](#Conditional-Statements), [Is & in](#Is-&-in)
 
 ## Module
 A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include executable code.  
@@ -560,4 +561,26 @@ print(a.clear())
 print("Intersection : ",a.intersection({6,456}))
 
 print("Union : ", a.union({8,11,45,37}))
+```
+
+### Conditional Statements
+
+Note: If you write if, elif & else then it is called as if else ladder & only one statement will be executed but it is also possible to write if, else or if, if, if, else. In such cases where we have multiple if’s all the if’s is treated as individual entities & thus multiple output can be seen in multiple true if statements. Also it is not necessary to have if, else statement only if or if, elif statement can also be executed all alone.
+```
+a = 45
+if (a>10):
+    print ("The value is greater than 10")
+elif (a>20):
+    print ("The value is greater than 20")
+else:
+    print ("The value is",a)
+```
+
+### Is & in
+``` 
+a = None
+b = [12,23,45,4,57]
+if (a is None):
+    print("A is none")
+print(23 in b)
 ```
