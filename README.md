@@ -629,4 +629,23 @@ else:
     print("This is inside else of for")
 ```
 
+### Continue
+It basically skips for loop rather than going to next statement, so considering following case it will skip when i = 5 & print its next statement ie., 6 & so forth.
+Tip: Best example of continue is to print two conditions like even/odd 
+```
+for i in range(10):
+    if (i==5):
+        continue
+    print(i)
+```
 
+
+### Pass
+It is a null statement in python. Can be used with in If, for & Function
+Tip: It's best use is to define all functions first whatever you want to create without writing its entire body.
+```
+i=10
+if (i>0):
+    pass
+print(i)
+```
