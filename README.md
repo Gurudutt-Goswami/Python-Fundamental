@@ -20,6 +20,7 @@
 8. [Dictionary](#Dictionary), [Dictionary Functions](#Dictionary-Functions), [Dictionary with in a dictionary using update function](#Dictionary-with-in-a-dictionary-using-update-function)
 9. [Sets](#Sets), [Adding elements in a set](#Adding-elements-in-a-set), [Set Functions](#Set-Functions)
 10. [Conditional Statements](#Conditional-Statements), [Is & in](#Is-In)
+11. [Loops](#Loops), [Range](#Range), [else with for](#else-with-for), [break](#break), [continue](#continue), [pass](#pass)
 
 ## Module
 A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include executable code.  
