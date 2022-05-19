@@ -21,6 +21,7 @@
 9. [Sets](#Sets), [Adding elements in a set](#Adding-elements-in-a-set), [Set Functions](#Set-Functions)
 10. [Conditional Statements](#Conditional-Statements), [Is & in](#Is-In)
 11. [Loops](#Loops), [Range](#Range), [else with for](#else-with-for), [break](#break), [continue](#continue), [pass](#pass)
+12. [Functions](#Functions)
 
 ## Module
 A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include executable code.  
@@ -650,3 +651,9 @@ if (i>0):
     pass
 print(i)
 ```
+
+### Functions
+1. The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again. 
+2. Functions can be both built-in or user-defined. It helps the program to be concise, non-repetitive, and organized.
+
+
