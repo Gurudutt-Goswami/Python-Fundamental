@@ -584,3 +584,49 @@ if (a is None):
     print("A is none")
 print(23 in b)
 ```
+
+### Loops
+#### While Loop
+```
+list = ["Banana","Grapes","Mango","Chicku"]
+i=0
+while i<len(list):
+    print(list[i])
+    i+=1
+```
+
+#### For Loop
+```
+list = ["Banana","Grapes","Mango","Chicku"]
+for item in list:
+    print(item)
+```
+
+
+### Range
+Range(Start , Stop, Step_Size)
+```
+for i in range(2,200,4):
+    print(i)
+```
+
+### else with For 
+```
+for i in range(2,200,4):
+    print(i)
+else:
+    print("This is inside else of for")
+```
+
+### break
+Note: for loop else will only execute only once that too when for loop will executes till end in following case it will not because it will step out due to break.
+```
+for i in range(2,200,4):
+    print(i)
+    if (i==5):
+        break
+else:
+    print("This is inside else of for")
+```
+
+
