@@ -655,5 +655,14 @@ print(i)
 ### Functions
 1. The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again. 
 2. Functions can be both built-in or user-defined. It helps the program to be concise, non-repetitive, and organized.
+```
+#Function Definition
+def percent(marks):                   
+    per1 = ((marks[0] + marks[1] + marks[2] +marks[2])/400) * 100
+    return per1
 
+mark1 = [16,34,67,90]
+mark2 = [45,31,79,42]
+print(percent(mark1),percent(mark2))  #Function Call 
+```
 
