@@ -22,7 +22,7 @@
 10. [Conditional Statements](#Conditional-Statements), [Is & in](#Is-In)
 11. [Loops](#Loops), [Range](#Range), [else with for](#else-with-for), [break](#break), [continue](#continue), [pass](#pass)
 12. [Functions](#Functions), [Default Argument](#Default-Arguments), [Recursion](#Recursion), [How to Generate Random Numbers in certain range ](#How-to-Generate-Random-Numbers-in-certain-range)
-13. [File I/O](#File-I/O), [Reading a File](#Reading-a-File), [Readline Function](#Readline-Function), [Modes of opening a File](#Modes-of-Opening-a-File), [Writing to a File](#Writing-to-a-file), [Append mode](#Append-mode), [with clause](#with-clause)
+13. [File I/O](#File-Input-Output), [Reading a File](#Reading-a-File), [Readline Function](#Readline-Function), [Modes of opening a File](#Modes-of-Opening-a-File), [Writing to a File](#Writing-to-a-file), [Append mode](#Append-mode), [with clause](#with-clause)
 
 
 ### Module
@@ -701,7 +701,7 @@ print(random.randint(1,50))
 ```
 
 
-### File I/O
+### File Input Output
 
 ### Reading a File
 1. By default, the mode is ‘read’
