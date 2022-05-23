@@ -23,6 +23,7 @@
 11. [Loops](#Loops), [Range](#Range), [else with for](#else-with-for), [break](#break), [continue](#continue), [pass](#pass)
 12. [Functions](#Functions), [Default Argument](#Default-Arguments), [Recursion](#Recursion), [How to Generate Random Numbers in certain range ](#How-to-Generate-Random-Numbers-in-certain-range)
 13. [File I/O](#File-Input-Output), [Reading a File](#Reading-a-File), [Readline Function](#Readline-Function), [Modes of opening a File](#Modes-of-Opening-a-File), [Writing to a File](#Writing-to-a-file), [Append mode](#Append-mode), [with clause](#with-clause)
+14. Other
 
 
 ### Module
@@ -764,3 +765,6 @@ with open('something.txt', 'w') as f:
     a = f.write("me")
 print(a)
 ```
+
+### Other
+1. To see detail regarding any particular thing of a code in VSCode, just go to that word & click on that word while pressing ctrl.
