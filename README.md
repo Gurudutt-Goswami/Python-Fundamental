@@ -714,6 +714,7 @@ print(data)
 f.close()
 ```
 
+
 ### Readline Function
 Readline function only read a single line at a time
 ```
@@ -727,10 +728,39 @@ print(data)
 f.close()
 ```
 
+
 ### Modes of Opening a File
 1. r : Open for reading
 2. w : Open for writing
 3. a : Open for appending
-4. + : Open for Updaing
+4. '+' : Open for Updaing
 5. rb : Open for read in binary mode
 6. rt : Open for read in text mode, though if don't mentioned mode python automatically takes this only.
+
+
+### Writing to a file
+Note : If you write multiple lines using seperate f.write() functions before closing the file with f.close() then all those statements are going to be written in file.
+```
+f = open("Important works.txt","w")
+f.write("This is just an example of write function ")
+f.close()
+```
+
+
+### Append mode 
+```
+f = open('something.txt', 'a')
+f.write("This is going to append not overwrite like write mode")
+f.close()
+```
+
+### with clause 
+1. Using with clause we don’t have to close a file 
+2. Note : You can't pass a number directly into f.write() function it must be converted into string, so either you need to give that in quotes or convert that into string using str() function.
+```
+with open('something.txt', 'r') as f:
+    a = f.read()
+with open('something.txt', 'w') as f:
+    a = f.write("me")
+print(a)
+```
