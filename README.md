@@ -22,7 +22,7 @@
 10. [Conditional Statements](#Conditional-Statements), [Is & in](#Is-In)
 11. [Loops](#Loops), [Range](#Range), [else with for](#else-with-for), [break](#break), [continue](#continue), [pass](#pass)
 12. [Functions](#Functions), [Default Argument](#Default-Arguments), [Recursion](#Recursion), [How to Generate Random Numbers in certain range ](#How-to-Generate-Random-Numbers-in-certain-range)
-
+13. [File I/O](#File=I/0), [Reading a File](#Reading-a-File), [Readline Function](#Readline-Function), [Modes of opening a File](#Modes-of-Opening-a-File), [Writing to a File](#Writing-to-a-file), [Append mode](#Append-mode), [with clause](#with-clause)
 
 
 ### Module
@@ -747,7 +747,7 @@ f.close()
 ```
 
 
-### Append mode 
+### Append mode
 ```
 f = open('something.txt', 'a')
 f.write("This is going to append not overwrite like write mode")
@@ -756,7 +756,7 @@ f.close()
 
 ### with clause 
 1. Using with clause we don’t have to close a file 
-2. Note : You can't pass a number directly into f.write() function it must be converted into string, so either you need to give that in quotes or convert that into string using str() function.
+#### Note : You can't pass a number directly into f.write() function it must be converted into string, so either you need to give that in quotes or convert that into string using str() function.
 ```
 with open('something.txt', 'r') as f:
     a = f.read()
