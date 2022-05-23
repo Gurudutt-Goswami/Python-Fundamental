@@ -706,11 +706,12 @@ print(random.randint(1,50))
 ### Reading a File
 1. By default, the mode is ‘read’
 2. In case you want to work on some file which is not there is your current directoy then instead of backlash you need to use forward slash like '/' to specify its path along with its extension.
-Tip: Optional You can also specify the number of character you want to read from a file in read function like read (10).
+#### Tip: Optional You can also specify the number of character you want to read from a file in read function like read (10).
 ```
 f = open("something.txt", "r")
 data = f.read()
 print(data)
+f.close()
 ```
 
 ### Readline Function
