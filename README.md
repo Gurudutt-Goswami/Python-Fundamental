@@ -666,3 +666,11 @@ mark2 = [45,31,79,42]
 print(percent(mark1),percent(mark2))  #Function Call 
 ```
 
+### Default Arguemnts
+```
+def greet(name = "Stranger"):
+    print("Hello ", name)
+    
+greet("Gurudutt Goswami")
+greet()
+```
