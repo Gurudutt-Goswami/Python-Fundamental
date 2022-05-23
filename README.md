@@ -667,6 +667,7 @@ print(percent(mark1),percent(mark2))  #Function Call
 ```
 
 ### Default Arguemnts
+Python allows function arguments to have default values. If the function is called without the argument, the argument gets its default value.
 ```
 def greet(name = "Stranger"):
     print("Hello ", name)
