@@ -21,9 +21,11 @@
 9. [Sets](#Sets), [Adding elements in a set](#Adding-elements-in-a-set), [Set Functions](#Set-Functions)
 10. [Conditional Statements](#Conditional-Statements), [Is & in](#Is-In)
 11. [Loops](#Loops), [Range](#Range), [else with for](#else-with-for), [break](#break), [continue](#continue), [pass](#pass)
-12. [Functions](#Functions), [Default Argument](#Default-Arguments), [Recursion](#Recursion)
+12. [Functions](#Functions), [Default Argument](#Default-Arguments), [Recursion](#Recursion), [How to Generate Random Numbers in certain range ](#How-to-Generate-Random-Numbers-in-certain-range)
 
-## Module
+
+
+### Module
 A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include executable code.  
 A module can be categorizes into two type:
   1. Built-in modules: os,abc etc. (https://docs.python.org/3/py-modindex.html)
@@ -691,3 +693,9 @@ print(a)
 ```
 #### How Recursion Works 
 ![Untitled-Diagram58](https://user-images.githubusercontent.com/86184439/169806985-c7c4a518-94ed-43bc-9cc8-110082932aaa.jpg)
+
+### How to Generate Random Numbers in certain range 
+```
+import random
+print(random.randint(1,50))
+```
