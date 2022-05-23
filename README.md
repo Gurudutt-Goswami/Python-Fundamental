@@ -713,3 +713,23 @@ data = f.read()
 print(data)
 ```
 
+### Readline Function
+Readline function only read a single line at a time
+```
+f = open("something.txt","r")
+#Read 1st line
+data = f.readline()
+print(data)
+#Read 2nd line
+data = f.readline()
+print(data)
+f.close()
+```
+
+### Modes of Opening a File
+1. r : Open for reading
+2. w : Open for writing
+3. a : Open for appending
+4. + : Open for Updaing
+5. rb : Open for read in binary mode
+6. rt : Open for read in text mode, though if don't mentioned mode python automatically takes this only.
