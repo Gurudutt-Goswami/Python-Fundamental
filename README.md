@@ -21,7 +21,7 @@
 9. [Sets](#Sets), [Adding elements in a set](#Adding-elements-in-a-set), [Set Functions](#Set-Functions)
 10. [Conditional Statements](#Conditional-Statements), [Is & in](#Is-In)
 11. [Loops](#Loops), [Range](#Range), [else with for](#else-with-for), [break](#break), [continue](#continue), [pass](#pass)
-12. [Functions](#Functions)
+12. [Functions](#Functions), [Default Argument](#Default-Argument), [Recursion](Recursion)
 
 ## Module
 A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include executable code.  
@@ -666,7 +666,7 @@ mark2 = [45,31,79,42]
 print(percent(mark1),percent(mark2))  #Function Call 
 ```
 
-### Default Arguemnts
+### Default Arguments
 Python allows function arguments to have default values. If the function is called without the argument, the argument gets its default value.
 ```
 def greet(name = "Stranger"):
@@ -676,7 +676,7 @@ greet("Gurudutt Goswami")
 greet()
 ```
 
-### Recursions
+### Recursion
 1. The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called as recursive function. 
 2. Using recursive algorithm, certain problems can be solved quite easily. Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc
 3. Some simpler problem are finding sum of first n natural number, factorial n etc.
@@ -689,5 +689,5 @@ def recursive(num):
 a = recursive(int(input("Enter a number to see its factorial ")))
 print(a)
 ```
-#### How recursion works 
+#### How Recursion Works 
 ![Untitled-Diagram58](https://user-images.githubusercontent.com/86184439/169806985-c7c4a518-94ed-43bc-9cc8-110082932aaa.jpg)
