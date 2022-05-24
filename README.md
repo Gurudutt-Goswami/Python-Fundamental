@@ -844,12 +844,17 @@ Harnam.getSalary() #Employee.getSalary(Harnam)
 #### Data Abstraction :  is a process of providing only the essential details to the outside world without revealing its implementation details.
 #### Encapsulation :  is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates.
 
+
+
+
 ### Modelling a problem in OOP's
 The scale/scope should be quite large as for smaller things like avarage of 4 numbers its not going to be that efficient.
 
 Class Name : Noun : संज्ञा की परिभाषा:- वह शब्द जो किसी प्राणी, वस्तु, स्थान, गुण, अवस्था, भाव एवं विचार के नाम का बोध कराता है संज्ञा कहलाता है |
 Attributes of Class : Adjective : (विशेषण):- जो शब्द वाक्य में noun या pronoun की विशेषता बतलाते है उसे हम adjective यानि की हिन्दी में विशेषण कहते है|
 Methods of Class : Verb : जिन शब्दों से किसी कार्य का करना या होना व्यक्त हो उन्हें क्रिया कहते हैं। जैसे- रोया, खा रहा, जायेगा आदि।
+
+
 
 
 ### Other
