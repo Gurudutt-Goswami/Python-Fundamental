@@ -842,6 +842,19 @@ Harnam.Salary = 200000        #Instance Attribute
 Harnam.getSalary()            #Employee.getSalary(Harnam)
 ```
 
+
+### Staticmethod
+If you want to call a method without mentioning ‘self’ in the argument since it can be just a simple print statement, then you can use a decorator name as @Staticmethod.
+```
+class a:
+    @staticmethod
+    def greet():
+        print("Good Morning !!")
+
+Anurag = a()
+Anurag.greet()
+```
+
 ### OOP's Properties
 #### Data Abstraction :  is a process of providing only the essential details to the outside world without revealing its implementation details.
 #### Encapsulation :  is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates.
