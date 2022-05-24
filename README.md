@@ -855,6 +855,27 @@ Anurag = a()
 Anurag.greet()
 ```
 
+### Constructor
+
+Note: Constructors got automatically invoked when an object of a class is created but it doesn’t mean it can’t have more arguments.
+```
+class Admission():
+    def __init__(self,student_name,student_gender,student_ClassNo):
+        self.name = student_name
+        self.gender = student_gender
+        self.classno = student_ClassNo
+        print("New Student Enrolled  ")
+
+    def admission_details(self):
+        print(f"The name of student is {self.name}")
+        print(f"The Gender student is {self.gender}")
+        print(f"The Class of student is {self.classno}")
+
+Gurudutt = Admission("Gurudutt Goswami","Male",12)
+Gurudutt.admission_details()
+```
+
+
 ### OOP's Properties
 #### Data Abstraction :  is a process of providing only the essential details to the outside world without revealing its implementation details.
 #### Encapsulation :  is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates.
