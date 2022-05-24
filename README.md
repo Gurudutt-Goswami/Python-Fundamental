@@ -1061,6 +1061,30 @@ obj_1 = c()
 
 
 
+### Class Method
+1. When you define any attribute of a class using object/instance of that class then instance attribute is created, class attribute remains as it is, so if you want to explicitly change or refer class attribute then you can use ClassMethod. 
+2. Let’s suppose you want to change the class attribute (name) of following class rather than creating an instance attribute then there are 3 methods:
+    1. Using @classmethod decorator
+    2. Using a dunder method like '__class__'.
+    3. Directly refering class attribute by class_name.attribute.
+```
+class a():
+    name = "Gurudutt Goswami"
+    
+    # @classmethod                        #Using Class Decorator
+    def print_name(self,name):
+        # self.name = name
+        self.__class__.name = name        #Using dunder method
+
+object_1 = a()
+print(object_1.name)
+a.name = "horse rider"                    #3rd Way where we directly refer class attribute with class_name.attribute
+print(object_1.name)
+object_1.print_name("Anurag Basu")
+print(object_1.name)
+```
+
+
 
 ### Other
 1. To see detail regarding any particular thing of a code in VSCode, just go to that word & click on that word while pressing ctrl.
