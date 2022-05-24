@@ -827,6 +827,8 @@ print(obj.name)
 ```
 
 #### How to use both class & instance attributes using self
+Note: In following example Harnam.getSalary() is equivalent to Employee.getSalary(Harnam) that’s why if you don’t mention ‘self’ in getSalary function as an argument you will get an error as indirectly it should take an argument which you are passing ie., Harnam.
+#### Self : represents the instance of the class. By using the “self”  we can access the attributes and methods of the class in python. It binds the attributes with the given arguments.
 ```
 class Employee:
     CompanyName = "Google"    #Class Attribute
