@@ -766,5 +766,91 @@ with open('something.txt', 'w') as f:
 print(a)
 ```
 
+
+### Classes 
+1. Class creates a user-defined data structure, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. 
+2. A class is like a blueprint (template) for an object.
+3. Attributes are the variables that belong to a class.
+4. Attributes are always public and can be accessed using the dot (.) operator. Eg.: Myclass.Myattribute
+
+```
+class RailwayForm():
+    def Application(self):
+        print(self.sno)
+        print(self.Name)
+
+applicant = RailwayForm()
+applicant.sno = 245 
+applicant.Name ="Gurudutt Goswami"
+applicant.Application()
+```
+
+#### Note: You can change an attribute of a class for an instance/Object. Here ‘CompanyName’ is an example of class attribute.
+#### Note: You can also change a class attribute directly.
+```
+class RailwayForm():
+    CompanyName = "Google"
+
+Gurudutt = RailwayForm()
+Gurudutt.CompanyName = "Microsoft"  #Changing an attribute of a class for an instance 
+Bhishma = RailwayForm()
+print(Gurudutt.CompanyName)
+print(Bhishma.CompanyName)
+
+RailwayForm.CompanyName = "Oracle"  #Changing a class attribute
+print(Gurudutt.CompanyName)
+print(Bhishma.CompanyName)
+```
+
+
+#### Following is an example of instance/object attribute
+```
+class RailwayForm():
+    CompanyName = "Google"
+Gurudutt = RailwayForm()
+Bhishma = RailwayForm()
+Gurudutt.Salary = 300000
+Bhishma.Salary = 500000
+print(Gurudutt.Salary)
+print(Bhishma.Salary)
+```
+
+#### Note: Note: Instance attributes take preference over class attributes during assignment & retrieval. Also if you have a class attributes & you are trying to change that class attribute for an instance then a new instance attribute will be created instead of modifying a class attribute for the instance.
+
+```
+class CompanyName():
+    name = "Google"
+obj = CompanyName()
+obj.name= "Microsoft"
+print(CompanyName.name)
+print(obj.name)
+```
+
+#### How to use both class & instance attributes using self
+```
+class Employee:
+    CompanyName = "Google"    #Class Attribute
+    Salary = 100000
+    def getSalary(self):
+        print(f"The salary of {self.Name} Who is working in {self.CompanyName} is {self.Salary} ")
+
+Harnam = Employee()
+Harnam.Name = "Harnam Singh"  #Instance Attribute
+Harnam.Salary = 200000        #Instance Attribute
+Harnam.getSalary() #Employee.getSalary(Harnam)
+```
+
+### OOP's Properties
+#### Data Abstraction :  is a process of providing only the essential details to the outside world without revealing its implementation details.
+#### Encapsulation :  is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates.
+
+### Modelling a problem in OOP's
+The scale/scope should be quite large as for smaller things like avarage of 4 numbers its not going to be that efficient.
+
+Class Name : Noun : संज्ञा की परिभाषा:- वह शब्द जो किसी प्राणी, वस्तु, स्थान, गुण, अवस्था, भाव एवं विचार के नाम का बोध कराता है संज्ञा कहलाता है |
+Attributes of Class : Adjective : (विशेषण):- जो शब्द वाक्य में noun या pronoun की विशेषता बतलाते है उसे हम adjective यानि की हिन्दी में विशेषण कहते है|
+Methods of Class : Verb : जिन शब्दों से किसी कार्य का करना या होना व्यक्त हो उन्हें क्रिया कहते हैं। जैसे- रोया, खा रहा, जायेगा आदि।
+
+
 ### Other
 1. To see detail regarding any particular thing of a code in VSCode, just go to that word & click on that word while pressing ctrl.
