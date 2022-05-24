@@ -893,5 +893,129 @@ The scale/scope should be quite large as for smaller things like avarage of 4 nu
 
 
 
+
+### Inheritance
+#### Inheritance is the capability of one class to derive or inherit the properties from another class. The benefits of inheritance are: 
+ 
+1. It represents real-world relationships well.
+2. It provides reusability of a code. Also, it allows us to add more features to a class without modifying it.
+3. It is transitive in nature, which means that if class B inherits from another class A, then all the subclasses of B would automatically inherit from class A.
+
+```
+class a():
+    def a_method(self):
+        print("This is A class")
+class b(a):
+    pass
+obj = b()
+obj.a_method()
+```
+
+
+### Function Overiding, New attributes in child class
+1. We can use the method attributes of parent class in child class. 
+2. Also you can override, add new attributes & method in the child class, just like following example.
+```
+class Employee():
+    CompanyName = "Google"
+
+    def showDetails(self):
+        print(f"This is base class")
+
+class programmer(Employee):
+    
+    #New Attribute
+    progLang = "c++" 
+
+    #New Method of child
+    def progLang(self): 
+        print(f"The programming is {self.progLang}")
+
+    #Overiding showDetails Method 
+    def showDetails(self):  
+        print("This is child class")
+
+p1 = programmer()   # Object of programmer class
+print(p1.CompanyName)   #How to access base class attributes that are not in child class
+p1.showDetails()
+```
+
+
+### Types of Inheritance
+#### Single Inheritance
+![single](https://user-images.githubusercontent.com/86184439/170061507-d27ee282-cfd8-4b7e-a843-84f13f7ba84e.png)
+
+```
+class a():
+    def a_method(self):
+        print("This is A class")
+class b(a):
+    pass
+obj = b()
+obj.a_method()
+```
+
+#### Multiple Inheritance & Ambiguity
+Note: Whenever these is an ambiguity child class will prioritize based on how classes names are given while inheriting, so in following example in ambiguity situation (commented code) you will get Google not Facebook since Employee is first while inheriting.
+![multiple](https://user-images.githubusercontent.com/86184439/170061555-25ce9394-c0d2-4662-925a-6b258a1723f3.png)
+
+```
+class Employee():
+    CompanyName = "Google"
+
+class freeLancer():
+    CoderLevel = 0
+    CompanyName = "FaceBook"
+
+    def levelUpgrade(self):
+        self.CoderLevel = self.CoderLevel + 1
+
+#This is multiple inheritance
+class programmer(Employee,freeLancer): 
+    name = "Gurudutt Goswami"
+
+p1 = programmer()   
+print("Starting Level : ",p1.CoderLevel)
+p1.levelUpgrade()
+print("New Upgraded Level : ", p1.CoderLevel)
+print("Company Name is " , p1.CompanyName)  #Ambiguity Situation
+```
+
+#### Mutilevel Inheritance
+![Multilevel](https://user-images.githubusercontent.com/86184439/170061599-cfe2277b-dac0-4d12-b110-ee0bc4ffcc34.jpg)
+
+```
+class a():
+    companyName = "xyz"
+
+    def fun(self):
+        print("I am having fun !!")
+
+class b(a):
+    companyName = "FightClub"
+    invoice = 25
+
+    def funny(self):
+        print("I am very cool")
+
+class c(b):
+    animal = "horse"
+
+    def happy(self):
+        print("This is very cool !!")
+
+obj_1 = c()
+
+#It will first go to the nearest class rather than main class
+print(obj_1.companyName)
+#If nearest class don't have that attribute or method then it will go to the base class
+obj_1.fun()
+```
+
+
+
+
+
+
 ### Other
 1. To see detail regarding any particular thing of a code in VSCode, just go to that word & click on that word while pressing ctrl.
