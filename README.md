@@ -837,7 +837,7 @@ class Employee:
 Harnam = Employee()
 Harnam.Name = "Harnam Singh"  #Instance Attribute
 Harnam.Salary = 200000        #Instance Attribute
-Harnam.getSalary() #Employee.getSalary(Harnam)
+Harnam.getSalary()            #Employee.getSalary(Harnam)
 ```
 
 ### OOP's Properties
