@@ -1013,6 +1013,51 @@ obj_1.fun()
 ```
 
 
+### Super Method 
+```
+class a():
+    def fun(self):
+        print("Grandfather")
+class b(a):
+    def fun(self):
+        super().fun()
+        print("Father")
+class c(b):
+    def fun(self):
+        super().fun()
+        print("Son")
+
+obj_1 = c()
+obj_1.fun()
+```
+Note: You can also use Super to run constructor of base classes, just like following:
+```
+class a():
+    def __init__(self):
+        print("I am First")
+
+    def fun(self):
+        print("Grandfather")
+class b(a):
+    def __init__(self):
+        super().__init__()
+        print("I am second")
+
+    def fun(self):
+        super().fun()
+        print("Father")
+class c(b):
+    def __init__(self):
+        super().__init__()
+        print("I am Third")
+
+    def fun(self):
+        super().fun()
+        print("Son")
+
+obj_1 = c()
+```
+
 
 
 
