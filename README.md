@@ -1134,14 +1134,8 @@ class a():
     def __floordiv__(self,val):
         return self.num // val.num
 
-    def __str__(self):
-        return f"Decimal Number : {self.num}"
-
 obj1 = a(25)
-print(obj1)
-
 obj2 = a(10)
-print(obj2)
 
 sum = obj1 + obj2
 sub = obj1 - obj2
@@ -1156,6 +1150,31 @@ print(f"Div {div}")
 print(f"Floor Div {fdiv}")
 ```
 
+### Dunder Function (str,len)
+1. If you print an object in following way you will get something like 
+      "<__main__.a object at 0x0000019ABFF2F6A0>" & this is primarily because you have’t configured string dunder. 
+2. In order to print object’s value in correct way try to invoke string dunder function just like image following this.
+```
+class a():
+    def __init__(self,num):
+        self.num = num
+obj = a(10)
+print(obj)
+
+
+class a():
+    def __init__(self,num):
+        self.num = num
+
+    def __str__(self):
+        return f"{self.num}"
+
+    def __len__(self):
+        return 467
+obj = a(10)
+print(obj)
+print(len(obj))
+```
 
 
 
