@@ -24,9 +24,9 @@
 12. [Functions](#Functions), [Default Argument](#Default-Arguments), [Recursion](#Recursion), [How to Generate Random Numbers in certain range ](#How-to-Generate-Random-Numbers-in-certain-range)
 13. [File I/O](#File-Input-Output), [Reading a File](#Reading-a-File), [Readline Function](#Readline-Function), [Modes of opening a File](#Modes-of-Opening-a-File), [Writing to a File](#Writing-to-a-file), [Append mode](#Append-mode), [with clause](#with-clause)
 14. [Classes](#Classes), [Changing Class & Instance Attributes](#Changing-Class-n-Instance-Attributes), [Class & Instance Attribute Preferences](#Class-n-Instance-Attribute-Preferences), [Self](#Self)
-15. [StaticMethod](#Staticmethod), [Constructor](#Constructor), [OOP's Properties](#OOP's-Properties), [Modelling a problem in OOP's](#Modelling-a-problem-in-OOP's), [Function Overiding, New attributes in child class](#Function-Overiding,-New-attributes-in-child-class)
-16. [Types of Inheritance](#Types-of-Inheritance), [Single Inheritance](#Single-Inheritance), [Multiple Inheritance & Ambiguity](#Multiple-Inheritance-&-Ambiguity), [Multilevel Inheritance](#Multilevel-Inheritance)
-17. [Super Method](#Super-Method), [Class Method](#Class-Method), [Property decorator or Getter & Setter](#Property-decorator-or-Getter-&-Setter), [Operator Overloading](#Operator-Overloading), [Dunder Function (str,len)](#Dunder-Function-(str,len))
+15. [StaticMethod](#Staticmethod), [Constructor](#Constructor), [OOP's Properties](#OOPs-Properties), [Modelling a problem in OOP's](#Modelling-a-problem-in-OOPs), [Function Overiding, New attributes in child class](#Function-Overiding-n-New-attributes-in-child-class)
+16. [Types of Inheritance](#Types-of-Inheritance), [Single Inheritance](#Single-Inheritance), [Multiple Inheritance & Ambiguity](#Multiple-Inheritance-n-Ambiguity), [Multilevel Inheritance](#Multilevel-Inheritance)
+17. [Super Method](#Super-Method), [Class Method](#Class-Method), [Property decorator or Getter & Setter](#Property-decorator-or-Getter-n-Setter), [Operator Overloading](#Operator-Overloading), [Dunder Function (str,len)](#Dunder-Function-(str-n-len))
 18. [Other](#Other)
 
 
@@ -820,7 +820,7 @@ print(Bhishma.CompanyName)
 ```
 
 
-### Class Instance n Attribute Preferences
+### Class n Instance Attribute Preferences
 #### Note: Note: Instance attributes take preference over class attributes during assignment & retrieval. Also if you have a class attributes & you are trying to change that class attribute for an instance then a new instance attribute will be created instead of modifying a class attribute.
 
 ```
@@ -885,14 +885,14 @@ Gurudutt.admission_details()
 ```
 
 
-### OOP's Properties
+### OOPs Properties
 #### Data Abstraction :  is a process of providing only the essential details to the outside world without revealing its implementation details.
 #### Encapsulation :  is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates.
 
 
 
 
-### Modelling a problem in OOP's
+### Modelling a problem in OOPs
 The scale/scope should be quite large as for smaller things like avarage of 4 numbers its not going to be that efficient.
 
 1. Class Name : Noun : संज्ञा की परिभाषा:- वह शब्द जो किसी प्राणी, वस्तु, स्थान, गुण, अवस्था, भाव एवं विचार के नाम का बोध कराता है संज्ञा कहलाता है |
@@ -921,7 +921,7 @@ obj.a_method()
 ```
 
 
-### Function Overiding, New attributes in child class
+### Function Overiding n New attributes in child class
 1. We can use the method attributes of parent class in child class. 
 2. Also you can override, add new attributes & method in the child class, just like following example.
 ```
@@ -964,7 +964,7 @@ obj = b()
 obj.a_method()
 ```
 
-#### Multiple Inheritance & Ambiguity
+#### Multiple Inheritance n Ambiguity
 Note: Whenever these is an ambiguity child class will prioritize based on how classes names are given while inheriting, so in following example in ambiguity situation (commented code) you will get Google not Facebook since Employee is first while inheriting.
 ![multiple](https://user-images.githubusercontent.com/86184439/170061555-25ce9394-c0d2-4662-925a-6b258a1723f3.png)
 
@@ -990,7 +990,7 @@ print("New Upgraded Level : ", p1.CoderLevel)
 print("Company Name is " , p1.CompanyName)  #Ambiguity Situation
 ```
 
-#### Mutilevel Inheritance
+#### Multilevel Inheritance
 ![Multilevel](https://user-images.githubusercontent.com/86184439/170061599-cfe2277b-dac0-4d12-b110-ee0bc4ffcc34.jpg)
 
 ```
@@ -1095,7 +1095,7 @@ print(object_1.name)
 
 
 
-### Property decorator or Getter & Setter
+### Property decorator or Getter n Setter
 1. In the following example we are controlling ‘Total’ as a function but in actual it’s an attribute & if you want to modify the value of b according to ‘Total’ value passed by you then you can use setter function & in that function you can basically define relationship between Total & b.
 2. If you want to see this in action, try to change the value of ‘Total’ after object creation statement & check the value of b.
 ```
@@ -1159,7 +1159,7 @@ print(f"Div {div}")
 print(f"Floor Div {fdiv}")
 ```
 
-### Dunder Function (str,len)
+### Dunder Function (str n len)
 1. If you print an object in following way you will get something like 
       "<__main__.a object at 0x0000019ABFF2F6A0>" & this is primarily because you have’t configured string dunder. 
 2. In order to print object’s value in correct way try to invoke string dunder function just like image following this.
