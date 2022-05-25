@@ -23,7 +23,11 @@
 11. [Loops](#Loops), [Range](#Range), [else with for](#else-with-for), [break](#break), [continue](#continue), [pass](#pass)
 12. [Functions](#Functions), [Default Argument](#Default-Arguments), [Recursion](#Recursion), [How to Generate Random Numbers in certain range ](#How-to-Generate-Random-Numbers-in-certain-range)
 13. [File I/O](#File-Input-Output), [Reading a File](#Reading-a-File), [Readline Function](#Readline-Function), [Modes of opening a File](#Modes-of-Opening-a-File), [Writing to a File](#Writing-to-a-file), [Append mode](#Append-mode), [with clause](#with-clause)
-14. [Other](#Other)
+14. [Classes](#Classes), [Changing Class & Instance Attributes](#Changing-Class-&-Instance-Attributes), [Class & Instance Attribute Preferences](#Class-&-Instance-Attribute-Preferences), [Self](#Self)
+15. [StaticMethod](#Staticmethod), [Constructor](#Constructor), [OOP's Properties](#OOP's-Properties), [Modelling a problem in OOP's](#Modelling-a-problem-in-OOP's), [Function Overiding, New attributes in child class](#Function-Overiding,-New-attributes-in-child-class)
+16. [Types of Inheritance](#Types-of-Inheritance), [Single Inheritance](#Single-Inheritance), [Multiple Inheritance & Ambiguity](#Multiple-Inheritance-&-Ambiguity), [Multilevel Inheritance](#Multilevel-Inheritance)
+17. [Super Method](#Super-Method), [Class Method](#Class-Method), [Property decorator or Getter & Setter](#Property-decorator-or-Getter-&-Setter), [Operator Overloading](#Operator-Overloading), [Dunder Function (str,len)](#Dunder-Function-(str,len))
+18. [Other](#Other)
 
 
 ### Module
@@ -785,23 +789,7 @@ applicant.Name ="Gurudutt Goswami"
 applicant.Application()
 ```
 
-#### Note: You can change an attribute of a class for an instance/Object. Here ‘CompanyName’ is an example of class attribute.
-#### Note: You can also change a class attribute directly.
-```
-class RailwayForm():
-    CompanyName = "Google"
-
-Gurudutt = RailwayForm()
-Gurudutt.CompanyName = "Microsoft"  #Changing an attribute of a class for an instance 
-Bhishma = RailwayForm()
-print(Gurudutt.CompanyName)
-print(Bhishma.CompanyName)
-
-RailwayForm.CompanyName = "Oracle"  #Changing a class attribute
-print(Gurudutt.CompanyName)
-print(Bhishma.CompanyName)
-```
-
+### Changing Class & Instance Attributes
 
 #### Following is an example of instance/object attribute
 ```
@@ -815,7 +803,25 @@ print(Gurudutt.Salary)
 print(Bhishma.Salary)
 ```
 
-#### Note: Note: Instance attributes take preference over class attributes during assignment & retrieval. Also if you have a class attributes & you are trying to change that class attribute for an instance then a new instance attribute will be created instead of modifying a class attribute for the instance.
+#### Note: You can change an attribute of a class for an instance/Object or even a class attribute itself. Here ‘CompanyName’ is an example of class attribute.
+```
+class RailwayForm():
+    CompanyName = "Google"
+
+Gurudutt = RailwayForm()
+Gurudutt.CompanyName = "Microsoft"  #Changing an attribute of a class for an instance basically changing instance attribute
+Bhishma = RailwayForm()
+print(Gurudutt.CompanyName)
+print(Bhishma.CompanyName)
+
+RailwayForm.CompanyName = "Oracle"  #Changing a class attribute
+print(Gurudutt.CompanyName)
+print(Bhishma.CompanyName)
+```
+
+
+### Class & Instance Attribute Preferences
+#### Note: Note: Instance attributes take preference over class attributes during assignment & retrieval. Also if you have a class attributes & you are trying to change that class attribute for an instance then a new instance attribute will be created instead of modifying a class attribute.
 
 ```
 class CompanyName():
@@ -826,9 +832,12 @@ print(CompanyName.name)
 print(obj.name)
 ```
 
+
+### Self
+#### Self represents the instance of the class. By using the “self”  we can access the attributes and methods of the class in python. It binds the attributes with the given arguments.
+
 #### How to use both class & instance attributes using self
 Note: In following example Harnam.getSalary() is equivalent to Employee.getSalary(Harnam) that’s why if you don’t mention ‘self’ in getSalary function as an argument you will get an error as indirectly it should take an argument which you are passing ie., Harnam.
-#### Self : represents the instance of the class. By using the “self”  we can access the attributes and methods of the class in python. It binds the attributes with the given arguments.
 ```
 class Employee:
     CompanyName = "Google"    #Class Attribute
@@ -1175,7 +1184,7 @@ obj = a(10)
 print(obj)
 print(len(obj))
 ```
-
+#### Note: For more please refer: https://docs.python.org/3/reference/datamodel.html
 
 
 ### Other
