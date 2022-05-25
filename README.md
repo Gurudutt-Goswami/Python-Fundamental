@@ -23,7 +23,7 @@
 11. [Loops](#Loops), [Range](#Range), [else with for](#else-with-for), [break](#break), [continue](#continue), [pass](#pass)
 12. [Functions](#Functions), [Default Argument](#Default-Arguments), [Recursion](#Recursion), [How to Generate Random Numbers in certain range ](#How-to-Generate-Random-Numbers-in-certain-range)
 13. [File I/O](#File-Input-Output), [Reading a File](#Reading-a-File), [Readline Function](#Readline-Function), [Modes of opening a File](#Modes-of-Opening-a-File), [Writing to a File](#Writing-to-a-file), [Append mode](#Append-mode), [with clause](#with-clause)
-14. [Classes](#Classes), [Changing Class & Instance Attributes](#Changing-Class-&-Instance-Attributes), [Class & Instance Attribute Preferences](#Class-&-Instance-Attribute-Preferences), [Self](#Self)
+14. [Classes](#Classes), [Changing Class & Instance Attributes](#Changing-Class-n-Instance-Attributes), [Class & Instance Attribute Preferences](#Class-n-Instance-Attribute-Preferences), [Self](#Self)
 15. [StaticMethod](#Staticmethod), [Constructor](#Constructor), [OOP's Properties](#OOP's-Properties), [Modelling a problem in OOP's](#Modelling-a-problem-in-OOP's), [Function Overiding, New attributes in child class](#Function-Overiding,-New-attributes-in-child-class)
 16. [Types of Inheritance](#Types-of-Inheritance), [Single Inheritance](#Single-Inheritance), [Multiple Inheritance & Ambiguity](#Multiple-Inheritance-&-Ambiguity), [Multilevel Inheritance](#Multilevel-Inheritance)
 17. [Super Method](#Super-Method), [Class Method](#Class-Method), [Property decorator or Getter & Setter](#Property-decorator-or-Getter-&-Setter), [Operator Overloading](#Operator-Overloading), [Dunder Function (str,len)](#Dunder-Function-(str,len))
@@ -789,7 +789,7 @@ applicant.Name ="Gurudutt Goswami"
 applicant.Application()
 ```
 
-### Changing Class & Instance Attributes
+### Changing Class n Instance Attributes
 
 #### Following is an example of instance/object attribute
 ```
@@ -820,7 +820,7 @@ print(Bhishma.CompanyName)
 ```
 
 
-### Class & Instance Attribute Preferences
+### Class Instance n Attribute Preferences
 #### Note: Note: Instance attributes take preference over class attributes during assignment & retrieval. Also if you have a class attributes & you are trying to change that class attribute for an instance then a new instance attribute will be created instead of modifying a class attribute.
 
 ```
