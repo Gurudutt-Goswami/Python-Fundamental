@@ -1086,5 +1086,30 @@ print(object_1.name)
 
 
 
+### Property decorator or Getter & Setter
+1. In the following example we are controlling ‘Total’ as a function but in actual it’s an attribute & if you want to modify the value of b according to ‘Total’ value passed by you then you can use setter function & in that function you can basically define relationship between Total & b.
+2. If you want to see this in action, try to change the value of ‘Total’ after object creation statement & check the value of b.
+```
+class a():
+    a = 1000
+    b = 200
+
+    @property   #also call getter function
+    def Total(self):
+        return self.a + self.b
+
+    @Total.setter
+    def Total(self, num):
+        self.b = num - self.a
+
+obj1 = a()
+print(f"Starting Value : {obj1.Total}")
+obj1.Total = 1100                   #This assignment is invoking Total setter function
+print(f"value of a : {obj1.a}")
+print(f"Modified Value of b is : {obj1.b}")
+```
+
+
+
 ### Other
 1. To see detail regarding any particular thing of a code in VSCode, just go to that word & click on that word while pressing ctrl.
