@@ -26,7 +26,7 @@
 14. [Classes](#Classes), [Changing Class & Instance Attributes](#Changing-Class-n-Instance-Attributes), [Class & Instance Attribute Preferences](#Class-n-Instance-Attribute-Preferences), [Self](#Self)
 15. [StaticMethod](#Staticmethod), [Constructor](#Constructor), [OOP's Properties](#OOPs-Properties), [Modelling a problem in OOP's](#Modelling-a-problem-in-OOPs), [Function Overiding, New attributes in child class](#Function-Overiding-n-New-attributes-in-child-class)
 16. [Types of Inheritance](#Types-of-Inheritance), [Single Inheritance](#Single-Inheritance), [Multiple Inheritance & Ambiguity](#Multiple-Inheritance-n-Ambiguity), [Multilevel Inheritance](#Multilevel-Inheritance)
-17. [Super Method](#Super-Method), [Class Method](#Class-Method), [Property decorator or Getter & Setter](#Property-decorator-or-Getter-n-Setter), [Operator Overloading](#Operator-Overloading), [Dunder Function (str,len)](#Dunder-Function-(str-n-len))
+17. [Super Method](#Super-Method), [Class Method](#Class-Method), [Property decorator or Getter & Setter](#Property-decorator-or-Getter-n-Setter), [Operator Overloading](#Operator-Overloading), [Dunder Function (str,len)](#Dunder-Function-str-n-len)
 18. [Other](#Other)
 
 
@@ -1159,7 +1159,7 @@ print(f"Div {div}")
 print(f"Floor Div {fdiv}")
 ```
 
-### Dunder Function (str n len)
+### Dunder Function str n len
 1. If you print an object in following way you will get something like 
       "<__main__.a object at 0x0000019ABFF2F6A0>" & this is primarily because you have’t configured string dunder. 
 2. In order to print object’s value in correct way try to invoke string dunder function just like image following this.
