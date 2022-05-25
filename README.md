@@ -1111,5 +1111,53 @@ print(f"Modified Value of b is : {obj1.b}")
 
 
 
+### Operator Overloading
+1. You can do anything on operator with the help of invoking some predefined dunder methods in python. Basically that means you can catch operator & thus can control what to do afterwards.
+2. Following are examples of overloading +, -, *, /, //, str
+```
+class a():
+    def __init__(self,num):
+        self.num = num
+    
+    def __add__(self,val):
+        return self.num + val.num
+    
+    def __sub__(self,val):
+        return self.num - val.num
+    
+    def __mul__(self,val):
+        return self.num * val.num
+    
+    def __truediv__(self,val):
+        return self.num / val.num
+
+    def __floordiv__(self,val):
+        return self.num // val.num
+
+    def __str__(self):
+        return f"Decimal Number : {self.num}"
+
+obj1 = a(25)
+print(obj1)
+
+obj2 = a(10)
+print(obj2)
+
+sum = obj1 + obj2
+sub = obj1 - obj2
+mul = obj1 * obj2
+div = obj1 / obj2
+fdiv = obj1 // obj2
+
+print(f"Sum {sum}")
+print(f"Sub {sub}")
+print(f"Mul {mul}")
+print(f"Div {div}")
+print(f"Floor Div {fdiv}")
+```
+
+
+
+
 ### Other
 1. To see detail regarding any particular thing of a code in VSCode, just go to that word & click on that word while pressing ctrl.
