@@ -1330,6 +1330,8 @@ print(f"Third Print Statement {a}")
 
 
 
+
+
 ### Enumerate function in python
 The enumerate function adds a counter to an iterable & returns it.
 ```
@@ -1344,6 +1346,34 @@ print("\nPrinting Index using Enumerate\n")
 for i, item in enumerate(list1):
     print(f"Index : {i} Value : {item}")
 ```
+
+
+
+
+
+### List Comprehensions
+This is an elegant way to create lists based on existing lists
+```
+num_list = [123,324,234,34,12,234,234,34,23,432,435,43,54,54,5,45,4,4,4,4,4,4,4,4]
+mix_list = [12,34,78,34,23,"Gurudutt Goswami",True, 45.2,36,2,90]
+b = []
+c = []
+print("Making a list with only even values from first list")
+for i in num_list:
+    if( i%2 ==0 ):
+        b.append(i)
+print(b)
+
+print("\nExample of doing above thing using List Comprehensions")
+c = [i for i in num_list if i%2 ==0]
+Sets = {i for i in num_list}
+
+print(c)
+print(Sets)
+```
+#### Note: This is also applicable for sets & dictionaries just like above
+
+
 
 
 
