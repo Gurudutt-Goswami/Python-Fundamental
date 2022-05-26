@@ -1201,7 +1201,7 @@ except:
     # Executed if error in the
     # try block
 ```
-### Note : Try block code will execute & run till the point its not throwing an error, once error occured only then it will go to the exception block. For example if there are 10 lines of code in try block & 5th line throws an error then output of above 4 lines will be excuted perfectly & then only except clause will run. Also if there other lines outside & below the except clause then after try block clause thing that will also run.
+#### Note : Try block code will execute & run till the point its not throwing an error, once error occured only then it will go to the exception block. For example if there are 10 lines of code in try block & 5th line throws an error then output of above 4 lines will be excuted perfectly & then only except clause will run. Also if there other lines outside & below the except clause then after try block clause thing that will also run.
 
 ```
 while(True):
