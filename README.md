@@ -27,7 +27,11 @@
 15. [StaticMethod](#Staticmethod), [Constructor](#Constructor), [OOP's Properties](#OOPs-Properties), [Modelling a problem in OOP's](#Modelling-a-problem-in-OOPs), [Function Overiding, New attributes in child class](#Function-Overiding-n-New-attributes-in-child-class)
 16. [Types of Inheritance](#Types-of-Inheritance), [Single Inheritance](#Single-Inheritance), [Multiple Inheritance & Ambiguity](#Multiple-Inheritance-n-Ambiguity), [Multilevel Inheritance](#Multilevel-Inheritance)
 17. [Super Method](#Super-Method), [Class Method](#Class-Method), [Property decorator or Getter & Setter](#Property-decorator-or-Getter-n-Setter), [Operator Overloading](#Operator-Overloading), [Dunder Function (str,len)](#Dunder-Function-str-n-len)
-18. [Other](#Other)
+18. [Try Except Clause](#Try-Except-Clause), [Catching Specific Errors](#How-to-catch-different-error-to-handle-explicitly), [Raising Exception](#How-to-raise-an-exception), [try with else](#try-with-else), [Finally](#Finally)
+19. [name](#name), [Global](#Global), [Enumerate](#Enumerate-function-in-python), [List Comprehensions](#List-Comprehensions)
+20. [Setting Virtual Environment](#Setting-Virtual-Environment), [pip Freeze](#pip-Freeze), [Redistribute](#Redistribute)
+21. [Lambda Function Anonymous Function](Lambda-Function-Anonymous-Function), [Join Method](#Join-Method), [Format Function](#Format-Function) , [Map Function](#Map-Function), [Filter Function](#Filter-Function), [Reduce Function](#Reduce-Function)
+22. [Other](#Other)
 
 
 ### Module
@@ -1241,7 +1245,7 @@ print("Exiting Program !")
 ```
 
 
-### How to raise an exception?
+### How to raise an exception
 ```
 def a(num):
     try:
@@ -1431,7 +1435,7 @@ Now we can distribute this file to other users and they can recreate the same en
 
 
 
-### Lambda Function /Anonymous Function
+### Lambda Function Anonymous Function
 You can create a function using an expression using lambda in a single line. 
 #### Syntax - Lambda Arguments : Expressions 
 ```
