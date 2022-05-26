@@ -1446,5 +1446,53 @@ print(Sum(123,4352,323))
 ```
 
 
+
+### Join Method 
+
+Creates a string from iterable objects like list, tuples etc. Using this you can add anything in each element of a list just like below.
+```
+list = ["Ankit","Sunita","Ramesh","Govind","Lalit","VenuBabu"]
+sentence = " add ".join(list)
+print(sentence)
+```
+
+
+
+### Format Function
+```
+Name = "Gurudutt Goswami"
+Language = "Python"
+Age = 28
+connect = "{} is learning {} at the age of {}".format(Name,Language,Age)
+print(connect)
+connect = "{0} is learning {2} at the age of {1}".format(Name,Language,Age)
+print(connect)
+```
+
+
+
+### Map Function
+Syntax : Map( normal/lambda function , input_list_name ) 
+This applies a function to all the items in an input list. Let’s suppose we have to compute square of all items in a list.
+```
+list1 = [1,2,3,4,5,6,7,8,9,10]
+# sq = []
+# Method 1
+# for i in list1:
+#     sq.append(i*i)
+# print(sq)
+
+#Method 2
+# sq = [i*i for i in list1]
+# print(sq)
+
+# Method 3
+def square(num):
+    return num*num
+print(list(map(square,list1)))
+```
+
+
 ### Other
 1. To see detail regarding any particular thing of a code in VSCode, just go to that word & click on that word while pressing ctrl.
+2. F string was not there in python 3.5 it was introduced from 3.6
