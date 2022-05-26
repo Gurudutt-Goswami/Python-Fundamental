@@ -1327,5 +1327,26 @@ value()
 print(f"Third Print Statement {a}")
 ```
 
+
+
+
+### Enumerate function in python
+The enumerate function adds a counter to an iterable & returns it.
+```
+list1 = [12,4534,0,45,True,"Gurudutt",45.7]
+index = 0
+print("Printing Index using explicit variable\n")
+for i in range(0,len(list1)):
+    print(f"Index : {index} Value : {list1[i]}")
+    index += 1    
+
+print("\nPrinting Index using Enumerate\n")
+for i, item in enumerate(list1):
+    print(f"Index : {i} Value : {item}")
+```
+
+
+
+
 ### Other
 1. To see detail regarding any particular thing of a code in VSCode, just go to that word & click on that word while pressing ctrl.
