@@ -1288,7 +1288,7 @@ print("Thanks for using this program")
 
 
 
-### '__name__ '
+### name
 
 #### Some.py
 ```
