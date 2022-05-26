@@ -1473,7 +1473,7 @@ print(connect)
 
 ### Map Function
 Syntax : Map( normal/lambda function , input_list_name ) 
-This applies a function to all the items in an input list. Let’s suppose we have to compute square of all items in a list.
+#### This applies a function to all the items in an input list. Let’s suppose we have to compute square of all items in a list.
 ```
 list1 = [1,2,3,4,5,6,7,8,9,10]
 # sq = []
@@ -1490,6 +1490,33 @@ list1 = [1,2,3,4,5,6,7,8,9,10]
 def square(num):
     return num*num
 print(list(map(square,list1)))
+```
+
+
+### Filter Function
+#### Syntax : Filter (function , list)
+Filter creates a list of items for which the function returns true.
+```
+list1 = [1,2,3,4,5,6,7,8,9,10,234,3,3,4,233525,234,2,34,234]
+def greater_than_10(num):
+    if num>10:
+        return True
+    else:
+        return False
+
+greater_than_100 = lambda num: num>100
+print(list(filter(greater_than_10,list1)))
+print(list(filter(greater_than_100,list1)))
+```
+
+
+### Reduce Function
+It solves the entire list just like you defined in your function. For using this function, you need to import it first like following.
+```
+from functools import reduce
+list1 = [1,2,3,4]
+fact = lambda a,b: a*b
+print(reduce(fact,list1))
 ```
 
 
