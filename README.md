@@ -1240,5 +1240,54 @@ except Exception as e:
 print("Exiting Program !")
 ```
 
+
+### How to raise an exception?
+```
+def a(num):
+    try:
+        return int(num) + 1
+    except:
+        raise TypeError("This is a raised Exception !")
+a = a('fun')
+print(a)
+```
+
+
+
+### try with else
+#### Note: Else things will only execute if try thing runs successfully
+```
+try:
+    num = int(input("Enter a number "))
+    c = 1/num
+    print("1/your enter number is :",c)
+except Exception as e:
+    print(f"Exception Occured\nError Details :{e}")
+else:
+    print("Program Executed Successfully !")
+```
+
+
+
+
+### Finally
+
+#### This piece of code will run in any condition even if you define exit() in exception and for this reason this is used to clear up things like close files, close database connection, close chat, session terminate etc.
+```
+try:
+    num = int(input("Enter a number "))
+    c = 1/num
+    print("1/your enter number is :",c)
+except Exception as e:
+    print(f"Exception Occured\nError Details :{e}")
+    exit()
+finally:
+    print("Program Executed Successfully !")
+print("Thanks for using this program")
+```
+
+
+
+
 ### Other
 1. To see detail regarding any particular thing of a code in VSCode, just go to that word & click on that word while pressing ctrl.
