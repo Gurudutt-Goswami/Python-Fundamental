@@ -1430,5 +1430,21 @@ Now we can distribute this file to other users and they can recreate the same en
 
 
 
+
+### Lambda Function /Anonymous Function
+You can create a function using an expression using lambda in a single line. 
+#### Syntax - Lambda Arguments : Expressions 
+```
+def func(a):
+    return a+10
+func = lambda a: a+10
+square = lambda a:a*a
+Sum = lambda a,b,c:a+b+c    #Multiple Arguments
+print(func(5))
+print(square(15))
+print(Sum(123,4352,323))
+```
+
+
 ### Other
 1. To see detail regarding any particular thing of a code in VSCode, just go to that word & click on that word while pressing ctrl.
