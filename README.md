@@ -1187,5 +1187,58 @@ print(len(obj))
 #### Note: For more please refer: https://docs.python.org/3/reference/datamodel.html
 
 
+### Try Except Clause
+1. Errors are the problems in a program due to which the program will stop the execution. On the other hand, exceptions are raised when some internal events occur which changes the normal flow of the program.Try and Except statement is used to handle these errors
+2. A try statement can have more than one except clause.
+```
+try:
+    # Some Code which we to want to run but will throw an error in certain situations
+except:
+    # Executed if error in the
+    # try block
+```
+### Note : Try block code will execute & run till the point its not throwing an error, once error occured only then it will go to the exception block. For example if there are 10 lines of code in try block & 5th line throws an error then output of above 4 lines will be excuted perfectly & then only except clause will run. Also if there other lines outside & below the except clause then after try block clause thing that will also run.
+
+```
+while(True):
+    print("Enter q to quit!")
+    num = (input("Enter a number "))
+    try:
+        if(num == 'q'):
+            break
+        else:
+            num = int(num)
+            if(num >= 10):
+                print("You number is greater than or equal to 10")
+            else:
+                print("You number is less than 10")
+    except Exception as e:
+        print(f"Type a number !!\nError Details : '{e}'")
+print("Exiting Program")
+```
+
+
+### How to catch different error to handle explicitly
+```
+try:
+    num = int(input("Enter a Number : "))
+    a = 1/num
+    print(a)
+
+except ValueError as e:
+    print("Please type a numeric value !")
+
+except ZeroDivisionError as e:
+    print("a = 1/your entered number, so it can't be 0, try to enter a different number ")
+
+except NameError as e:
+    print(f"Error Occured \nError Details : {e}")
+
+except Exception as e:
+    print(f"This needs to be handled ! \nError Details : '{e}' ")
+
+print("Exiting Program !")
+```
+
 ### Other
 1. To see detail regarding any particular thing of a code in VSCode, just go to that word & click on that word while pressing ctrl.
