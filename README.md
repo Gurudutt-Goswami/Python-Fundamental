@@ -1374,6 +1374,62 @@ print(Sets)
 #### Note: This is also applicable for sets & dictionaries just like above
 
 
+### Setting Virtual Environment
+
+#### Step 1:
+
+In case you find any error while installing any package in python like following with ``` pip install virtualenv``` then try ```pip install --user virtualenv ```& also try to upgrade your pip using ```python -m pip install --user --upgrade pip```
+
+#### ERROR: Could not install packages due to an OSError: [WinError 5] Access is denied:  'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\backports\\__init__.py' Consider using the `--user` option or check the permissions.
+
+### Step 2:
+
+After this type ```virtualenv myprojectenv``` to create a new virtual environment
+
+#### If you are getting an error read following
+After this you might get a warning that this is install in so & so path which is not a part of Path variable so then try to copy this path & add this in your path environment variable from control panel -> system -> Environment variable
+
+### Step 3:
+
+1. Once you have created a virtual environment you need to activate it 
+
+```Source myprojectenv/bin/activate		#For Mac/linux Users```
+
+2. For windows type your new virtual environment name like myprojectenv & press tab it will come like. \myprojectenv\ then type ‘s’ (& then tab to autocomplete it ) => .\myprojectenv\Scripts\ & then type activate.ps1 => .\myprojectenv\Scripts\Activate.ps1
+
+```
+.\myprojectenv\Scripts\Activate.ps1
+.\YourVirtualEnvName\Scripts\Activate.ps1
+```
+
+#### Error
+'cannot be loaded because running scripts is disabled on this system.'
+If you are getting an error run following line after opening windows power shell in admin
+```Set-ExecutionPolicy Unrestricted –Force```
+
+#### If you are still getting an error like 
+Access to the registry key 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell' is denied. To change the execution policy for the default (LocalMachine) scope, start Windows PowerShell with the "Run as administrator" option. To change the execution policy for the    current user, run "Set-ExecutionPolicy -Scope CurrentUser".
+
+Then run this line: 
+```
+Set-ExecutionPolicy -Scope CurrentUser
+``` 
+and set ```ExecutionPolicy to Unrestricted```
+
+#### Step 4:
+
+1. Now you are in your virtual environment, so if you try to install package like pip install flask it will installed in this environment only.
+2. Now if you want to switch back to your system interpreter I mean to your normal environment just type ```deactivate``` & you are done
+
+
+### pip Freeze
+return all the packages installed in a given python environment along with versions. If you want to save this in a file you can write pip 
+```freeze > filename.txt```
+
+
+### Redistribute
+Now we can distribute this file to other users and they can recreate the same environment using
+```pip install -r filename.txt```
 
 
 
