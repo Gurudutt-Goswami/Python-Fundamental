@@ -30,7 +30,7 @@
 18. [Try Except Clause](#Try-Except-Clause), [Catching Specific Errors](#How-to-catch-different-error-to-handle-explicitly), [Raising Exception](#How-to-raise-an-exception), [try with else](#try-with-else), [Finally](#Finally)
 19. [name](#name), [Global](#Global), [Enumerate](#Enumerate-function-in-python), [List Comprehensions](#List-Comprehensions)
 20. [Setting Virtual Environment](#Setting-Virtual-Environment), [pip Freeze](#pip-Freeze), [Redistribute](#Redistribute)
-21. [Lambda Function Anonymous Function](Lambda-Function-Anonymous-Function), [Join Method](#Join-Method), [Format Function](#Format-Function) , [Map Function](#Map-Function), [Filter Function](#Filter-Function), [Reduce Function](#Reduce-Function)
+21. [Lambda Function/Anonymous Function](#Lambda-Function-Anonymous-Function), [Join Method](#Join-Method), [Format Function](#Format-Function) , [Map Function](#Map-Function), [Filter Function](#Filter-Function), [Reduce Function](#Reduce-Function)
 22. [Other](#Other)
 
 
