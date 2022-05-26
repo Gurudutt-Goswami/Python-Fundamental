@@ -1313,6 +1313,19 @@ some.greet(“Gurudutt Goswami”)
 
 
 
+### Global
+The global keyword is used to modify the variable outside of the current scope.
+```
+a =65
+def value():
+    global a
+    print(f"First Print Statement {a}")
+    a = 547
+    print(f"Second Print Statement {a}")
+
+value()
+print(f"Third Print Statement {a}")
+```
 
 ### Other
 1. To see detail regarding any particular thing of a code in VSCode, just go to that word & click on that word while pressing ctrl.
