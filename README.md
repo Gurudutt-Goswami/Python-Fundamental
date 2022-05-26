@@ -1382,14 +1382,14 @@ In case you find any error while installing any package in python like following
 
 #### ERROR: Could not install packages due to an OSError: [WinError 5] Access is denied:  'C:\\ProgramData\\Anaconda3\\Lib\\site-packages\\backports\\__init__.py' Consider using the `--user` option or check the permissions.
 
-### Step 2:
+#### Step 2:
 
 After this type ```virtualenv myprojectenv``` to create a new virtual environment
 
-#### If you are getting an error read following
+##### If you are getting an error read following
 After this you might get a warning that this is install in so & so path which is not a part of Path variable so then try to copy this path & add this in your path environment variable from control panel -> system -> Environment variable
 
-### Step 3:
+#### Step 3:
 
 1. Once you have created a virtual environment you need to activate it 
 
@@ -1402,7 +1402,7 @@ After this you might get a warning that this is install in so & so path which is
 .\YourVirtualEnvName\Scripts\Activate.ps1
 ```
 
-#### Error
+#### Getting Error read following
 'cannot be loaded because running scripts is disabled on this system.'
 If you are getting an error run following line after opening windows power shell in admin
 ```Set-ExecutionPolicy Unrestricted –Force```
@@ -1410,11 +1410,7 @@ If you are getting an error run following line after opening windows power shell
 #### If you are still getting an error like 
 Access to the registry key 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell' is denied. To change the execution policy for the default (LocalMachine) scope, start Windows PowerShell with the "Run as administrator" option. To change the execution policy for the    current user, run "Set-ExecutionPolicy -Scope CurrentUser".
 
-Then run this line: 
-```
-Set-ExecutionPolicy -Scope CurrentUser
-``` 
-and set ```ExecutionPolicy to Unrestricted```
+Then run this line: ``` Set-ExecutionPolicy -Scope CurrentUser ```  and set ```ExecutionPolicy to Unrestricted```
 
 #### Step 4:
 
