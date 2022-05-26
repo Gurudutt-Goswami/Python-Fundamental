@@ -1288,6 +1288,31 @@ print("Thanks for using this program")
 
 
 
+### '__name__ '
+
+#### Some.py
+```
+def greet(name):
+    print(f"Good Morning, {name}")
+
+print(__name__)
+if(__name__ == "__main__"):
+    name = input("Enter you name Sir \n")
+    greet(name)
+```
+
+#### something.py
+```
+import some
+print("Good Afternoon")
+some.greet(“Gurudutt Goswami”)
+```
+
+#### Note : If you have anything in your some.py file then it will run first when you run something.py since you have imported some.py but if you want to avoid things written in some.py while importing it into any other file/program then you can use __name__, the value of __name__ while running some.py will be __main__ but when you run it in other file like in something.py it’s value is name of the module that is ‘some’ & using this you can avoid running anything of your module in other program/file just like above.
+
+
+
+
 
 ### Other
 1. To see detail regarding any particular thing of a code in VSCode, just go to that word & click on that word while pressing ctrl.
