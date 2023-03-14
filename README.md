@@ -7,6 +7,7 @@
 4. After installation open cmd (or Window power shell if you are using Windows) & type 'python', to see version only type 'python --version'
 5. Python is a ```high level, Portable(Works on Linux/Windows/Mac) , Open Source & case sensitive language.```
 6. To increase the font size using ctrl + mouse wheel, Go to VSCode Settings & type Zoom where you will get 'Mouse Wheel Zoom' Option, just check that.
+7. It's also an interpreted language which means it isn't compiled directly to machine code and importantly is commonly used in an interactive fashion.
 
 
 # Topics
